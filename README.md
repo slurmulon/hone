@@ -1,5 +1,7 @@
 # Hone
+
 > :telescope: Limitless, open-source project management
+
 ---
 
 Hone aims to be a pragmatic yet powerful project management tool that allows for highly customizable workflows
