@@ -12,6 +12,7 @@ defmodule Hone.User do
     field :avatar, :string, null: true
     field :confirmed, :boolean, default: false
     many_to_many :projects, Project, join_through: "users_projects"
+    many_to_many :boards, Board, join_through: "users_boards"
     many_to_many :units, Unit, join_through: "users_units"
     timestamps
   end

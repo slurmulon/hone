@@ -18,10 +18,16 @@ defmodule Hone.Repo.Migrations.CreateCoreTables do
       timestamps
     end
 
+    create table(:boards) do
+      add :name, :string
+      add :project_id, references(:projects)
+      timestamps
+    end
+
     create table(:stages) do
       add :name, :string, unique: true
       add :order, :integer, default: 0
-      add :project_id, references(:projects)
+      add :project_id, references(:boards)
       timestamps
     end
 
@@ -46,6 +52,11 @@ defmodule Hone.Repo.Migrations.CreateCoreTables do
     create table(:users_projects) do
       add :user_id, references(:users)
       add :project_id, references(:projects)
+    end
+
+    create table(:users_boards) do
+      add :user_id references(:users)
+      add :board_id, references(:boards)
     end
 
     create table(:users_units) do
