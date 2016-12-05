@@ -1,3 +1,4 @@
+# TODO: probably @deprecate this
 defmodule Hone.UserView do
   use Hone.Web, :view
 
