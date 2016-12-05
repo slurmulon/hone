@@ -1,5 +1,6 @@
 # Ecto
 
+- http://www.phoenixframework.org/v0.13.1/docs/ecto-models
 - http://www.phoenixframework.org/docs/ecto-models
 - https://hexdocs.pm/ecto/Ecto.Schema.html#summary
 - https://github.com/jazzyb/sqlite_ecto/wiki/Basic-Sqlite.Ecto-Tutorial
@@ -21,3 +22,4 @@
 - https://blog.diacode.com/trello-clone-with-phoenix-and-react-pt-1
 - http://gogogarrett.sexy/programming-in-elixir-with-the-phoenix-framework-building-a-basic-CRUD-app/
 - https://github.com/blackfist/tutorial_elixir_plug_ecto
+- https://medium.com/robot-overlord/resources-for-getting-started-with-elixir-phoenix-1e92dc87aca4#.s8majs5uc
