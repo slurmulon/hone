@@ -55,7 +55,7 @@ defmodule Hone.Repo.Migrations.CreateCoreTables do
     end
 
     create table(:users_boards) do
-      add :user_id references(:users)
+      add :user_id, references(:users)
       add :board_id, references(:boards)
     end
 
