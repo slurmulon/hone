@@ -2,6 +2,8 @@ defmodule Hone.User do
   use Ecto.Schema
   alias Hone.{Project, Unit}
 
+  import Ecto.Changeset
+
   schema "users" do
     field :given_name, :string
     field :family_name, :string
@@ -15,6 +17,13 @@ defmodule Hone.User do
     many_to_many :boards, Board, join_through: "users_boards"
     many_to_many :units, Unit, join_through: "users_units"
     timestamps
+  end
+
+  def changeset(struct, params \\ %{}) do
+    struct
+    |> cast(params, [:given_name, :family_name, :email, :username, :password, :encrypted_password, :avatar, :confirmed])
+    |> validate_required([:given_name, :family_name, :email, :username, :encrypted_password])
+    |> validate_format(:email, ~r/@/)
   end
 
 end
