@@ -14,6 +14,7 @@
 - http://www.phoenixframework.org/docs/routing
 - http://www.phoenixframework.org/docs/controllers
 - http://www.phoenixframework.org/docs/mix-tasks
+- https://www.coshx.com/blog/2016/03/16/json-api-with-phoenix/
 
 # Guides
 
