@@ -3,7 +3,7 @@ defmodule Hone.UserControllerTest do
 
   test "/index returns a list of users" do
     users_json =
-      %User{given_name: "Bob", family_name: "Saget", email: "bob@madhax.io", username: "bob", password: "test"}
+      %Hone.User{given_name: "Bob", family_name: "Saget", email: "bob@madhax.io", username: "bob", password: "test"}
       |> Repo.insert
       |> List.wrap
       |> Poison.encode!
