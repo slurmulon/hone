@@ -1,5 +1,6 @@
 defmodule Hone.User do
-  use Ecto.Schema
+  # use Ecto.Schema
+  use Hone.Web, :model
   alias Hone.{Project, Unit}
 
   import Ecto.Changeset
