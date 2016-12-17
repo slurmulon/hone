@@ -1,5 +1,5 @@
 defmodule Hone.NoteControllerTest do
-  use Hone.ConnCase
+  use Hone.ConnCase, async: true
 
   alias Hone.Note
   @valid_attrs %{body: "some content"}

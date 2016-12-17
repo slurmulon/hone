@@ -7,6 +7,5 @@ defmodule Hone.Repo.Migrations.CreateProject do
 
       timestamps
     end
-
   end
 end

@@ -1,5 +1,5 @@
 defmodule Hone.UnitControllerTest do
-  use Hone.ConnCase
+  use Hone.ConnCase, async: true
 
   alias Hone.Unit
   @valid_attrs %{body: "some content", size: 42, title: "some content"}

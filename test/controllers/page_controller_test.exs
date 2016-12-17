@@ -1,5 +1,5 @@
 defmodule Hone.PageControllerTest do
-  use Hone.ConnCase
+  use Hone.ConnCase, async: true
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

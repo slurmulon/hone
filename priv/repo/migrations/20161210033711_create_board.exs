@@ -8,7 +8,7 @@ defmodule Hone.Repo.Migrations.CreateBoard do
 
       timestamps
     end
-    create index(:boards, [:project_id])
 
+    create index(:boards, [:project_id])
   end
 end

@@ -1,5 +1,5 @@
 defmodule Hone.StageControllerTest do
-  use Hone.ConnCase
+  use Hone.ConnCase, async: true
 
   alias Hone.Stage
   @valid_attrs %{name: "some content", order: 42}

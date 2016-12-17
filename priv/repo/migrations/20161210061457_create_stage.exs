@@ -9,8 +9,8 @@ defmodule Hone.Repo.Migrations.CreateStage do
 
       timestamps
     end
+
     create unique_index(:stages, [:name])
     create index(:stages, [:board_id])
-
   end
 end

@@ -3,13 +3,11 @@ defmodule Hone.Note do
 
   schema "notes" do
     field :body, :string
-    belongs_to :unit, Hone.Unit
+    belongs_to :user, Hone.User, foreign_key: :user_id
+    belongs_to :unit, Hone.Unit, foreign_key: :unit_id
 
     timestamps
   end
-
-  @required_fields ~w(body)
-  @optional_fields ~w()
 
   @doc """
   Creates a changeset based on the `model` and `params`.
@@ -17,8 +15,9 @@ defmodule Hone.Note do
   If no params are provided, an invalid changeset is returned
   with no validation performed.
   """
-  def changeset(model, params \\ :empty) do
+  def changeset(model, params \\ %{}) do
     model
-    |> cast(params, @required_fields, @optional_fields)
+    |> cast(params, [:body])
+    |> validate_required([:body])
   end
 end

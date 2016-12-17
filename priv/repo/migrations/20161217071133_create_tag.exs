@@ -9,7 +9,7 @@ defmodule Hone.Repo.Migrations.CreateTag do
 
       timestamps
     end
-    create index(:tags, [:unit_id])
 
+    create index(:tags, [:unit_id])
   end
 end

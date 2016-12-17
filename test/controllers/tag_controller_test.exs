@@ -1,5 +1,5 @@
 defmodule Hone.TagControllerTest do
-  use Hone.ConnCase
+  use Hone.ConnCase, async: true
 
   alias Hone.Tag
   @valid_attrs %{color: "some content", label: "some content"}

@@ -15,5 +15,19 @@ defmodule Hone.Repo.Migrations.CreateUser do
       timestamps
     end
 
+    create table(:users_projects) do
+      add :user_id, references(:users)
+      add :project_id, references(:projects)
+    end
+
+    create table(:users_boards) do
+      add :user_id, references(:users)
+      add :board_id, references(:boards)
+    end
+
+    create table(:users_units) do
+      add :user_id, references(:users)
+      add :unit_id, references(:units)
+    end
   end
 end

@@ -3,14 +3,11 @@ defmodule Hone.Project do
 
   schema "projects" do
     field :name, :string
-    has_many :boards, Board, on_delete: :delete_all
-    many_to_many :users, User, join_through: "users_projects"
+    has_many :boards, Hone.Board, on_delete: :delete_all
+    many_to_many :users, Hone.User, join_through: "users_projects"
 
     timestamps
   end
-
-  @required_fields ~w(name)
-  @optional_fields ~w()
 
   @doc """
   Creates a changeset based on the `model` and `params`.
@@ -18,8 +15,9 @@ defmodule Hone.Project do
   If no params are provided, an invalid changeset is returned
   with no validation performed.
   """
-  def changeset(model, params \\ :empty) do
+  def changeset(model, params \\ %{}) do
     model
-    |> cast(params, @required_fields, @optional_fields)
+    |> cast(params, [:name])
+    |> validate_required([:name])
   end
 end

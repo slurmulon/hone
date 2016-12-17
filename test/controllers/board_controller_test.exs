@@ -1,5 +1,5 @@
 defmodule Hone.BoardControllerTest do
-  use Hone.ConnCase
+  use Hone.ConnCase, async: true
 
   alias Hone.Board
   @valid_attrs %{name: "some content"}

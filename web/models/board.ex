@@ -6,13 +6,10 @@ defmodule Hone.Board do
     has_many :stages, Hone.Stage, on_delete: :delete_all
     has_many :units, Hone.Unit, on_delete: :delete_all
     many_to_many :users, Hone.User, join_through: "users_boards"
-    belongs_to :project, Hone.Project
+    belongs_to :project, Hone.Project, foreign_key: :project_id
 
     timestamps
   end
-
-  @required_fields ~w(name)
-  @optional_fields ~w()
 
   @doc """
   Creates a changeset based on the `model` and `params`.
@@ -20,8 +17,9 @@ defmodule Hone.Board do
   If no params are provided, an invalid changeset is returned
   with no validation performed.
   """
-  def changeset(model, params \\ :empty) do
+  def changeset(model, params \\ %{}) do
     model
-    |> cast(params, @required_fields, @optional_fields)
+    |> cast(params, [:name])
+    |> validate_required([:name])
   end
 end

@@ -10,7 +10,7 @@ defmodule Hone.Repo.Migrations.CreateUnit do
 
       timestamps
     end
-    create index(:units, [:stage_id])
 
+    create index(:units, [:stage_id])
   end
 end
