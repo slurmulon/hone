@@ -34,3 +34,7 @@
 - http://gogogarrett.sexy/programming-in-elixir-with-the-phoenix-framework-building-a-basic-CRUD-app/
 - https://github.com/blackfist/tutorial_elixir_plug_ecto
 - https://medium.com/robot-overlord/resources-for-getting-started-with-elixir-phoenix-1e92dc87aca4#.s8majs5uc
+
+# Example Projects
+
+- https://github.com/kenta-aktsk/media_sample/
