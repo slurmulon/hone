@@ -2,7 +2,7 @@ defmodule Hone.UserControllerTest do
   use Hone.ConnCase
 
   alias Hone.User
-  @valid_attrs %{avatar: "some content", confirmed: true, email: "email@example.com", encrypted_password: "some content", family_name: "some content", given_name: "some content", password: "some content", username: "some content"}
+  @valid_attrs %{avatar: "http://example.com/test.jpg", confirmed: true, email: "email@example.com", encrypted_password: "some content", family_name: "Saget", given_name: "Bob", password: "password", username: "user"}
   @invalid_attrs %{}
 
   setup %{conn: conn} do

@@ -25,9 +25,10 @@ defmodule Hone.User do
   """
   def changeset(model, params \\ %{}) do
     model
-    # |> cast(params, @required_fields, @optional_fields)
-    |> cast(params, [:given_name, :family_name, :email, :username, :password, :avatar, :confirmed])
+    |> cast(params, [:given_name, :family_name, :email, :username, :password, :encrypted_password, :avatar, :confirmed])
     |> validate_required([:given_name, :family_name, :email, :username, :password])
+    # |> cast(params, @required_fields ++ @optional_fields)
+    # |> validate_required(@required_fields)
     |> validate_length(:password, min: 8, max: 64)
     |> validate_format(:email, ~r/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/)
     # |> hash_password()
