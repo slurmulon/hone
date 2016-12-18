@@ -1,30 +1,51 @@
 defmodule Hone.User do
-  # use Ecto.Schema
   use Hone.Web, :model
-  alias Hone.{Project, Unit}
-
-  import Ecto.Changeset
 
   schema "users" do
     field :given_name, :string
     field :family_name, :string
-    field :email, :string, unique: true
-    field :username, :string, unique: true
-    field :password, :string, virtual: true
-    field :encrypted_password, :string, null: false
-    field :avatar, :string, null: true
+    field :email, :string
+    field :username, :string
+    field :password, :string
+    field :encrypted_password, :string
+    field :avatar, :string
     field :confirmed, :boolean, default: false
-    many_to_many :projects, Project, join_through: "users_projects"
-    many_to_many :boards, Board, join_through: "users_boards"
-    many_to_many :units, Unit, join_through: "users_units"
+
     timestamps
   end
 
-  def changeset(struct, params \\ %{}) do
-    struct
+  # @required_fields ~w(given_name family_name email username password encrypted_password avatar confirmed)
+  # @optional_fields ~w()
+
+  @doc """
+  Creates a changeset based on the `model` and `params`.
+
+  If no params are provided, an invalid changeset is returned
+  with no validation performed.
+  """
+  def changeset(model, params \\ %{}) do
+    model
     |> cast(params, [:given_name, :family_name, :email, :username, :password, :encrypted_password, :avatar, :confirmed])
-    |> validate_required([:given_name, :family_name, :email, :username, :encrypted_password])
-    |> validate_format(:email, ~r/@/)
+    |> validate_required([:given_name, :family_name, :email, :username, :password])
+    # |> cast(params, @required_fields ++ @optional_fields)
+    # |> validate_required(@required_fields)
+    |> validate_length(:password, min: 8, max: 64)
+    |> validate_format(:email, ~r/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/)
+    # |> hash_password()
+    # |> enable_user()
+    |> unique_constraint(:username, name: :app_user_username_key)
+    |> unique_constraint(:email, name: :app_user_email_key)
   end
 
+  defp hash_password(changeset) do
+    case changeset do
+      %Ecto.Changeset{valid?: true, changes: %{plain_password: pass}} ->
+        newChangeset = changeset
+          |> put_change(:password, Comeonin.Bcrypt.hashpwsalt(pass))
+        newChangeset |> put_change(:salt, "salt")
+      _ ->
+        IO.puts "failed?"
+        changeset
+    end
+  end
 end

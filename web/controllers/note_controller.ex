@@ -1,24 +1,24 @@
-defmodule Hone.UserController do
+defmodule Hone.NoteController do
   use Hone.Web, :controller
 
-  alias Hone.User
+  alias Hone.Note
 
-  plug :scrub_params, "user" when action in [:create, :update]
+  plug :scrub_params, "note" when action in [:create, :update]
 
   def index(conn, _params) do
-    users = Repo.all(User)
-    render(conn, "index.json", users: users)
+    notes = Repo.all(Note)
+    render(conn, "index.json", notes: notes)
   end
 
-  def create(conn, %{"user" => user_params}) do
-    changeset = User.changeset(%User{}, user_params)
+  def create(conn, %{"note" => note_params}) do
+    changeset = Note.changeset(%Note{}, note_params)
 
     case Repo.insert(changeset) do
-      {:ok, user} ->
+      {:ok, note} ->
         conn
         |> put_status(:created)
-        |> put_resp_header("location", user_path(conn, :show, user))
-        |> render("show.json", user: user)
+        |> put_resp_header("location", note_path(conn, :show, note))
+        |> render("show.json", note: note)
       {:error, changeset} ->
         conn
         |> put_status(:unprocessable_entity)
@@ -27,17 +27,17 @@ defmodule Hone.UserController do
   end
 
   def show(conn, %{"id" => id}) do
-    user = Repo.get!(User, id)
-    render(conn, "show.json", user: user)
+    note = Repo.get!(Note, id)
+    render(conn, "show.json", note: note)
   end
 
-  def update(conn, %{"id" => id, "user" => user_params}) do
-    user = Repo.get!(User, id)
-    changeset = User.changeset(user, user_params)
+  def update(conn, %{"id" => id, "note" => note_params}) do
+    note = Repo.get!(Note, id)
+    changeset = Note.changeset(note, note_params)
 
     case Repo.update(changeset) do
-      {:ok, user} ->
-        render(conn, "show.json", user: user)
+      {:ok, note} ->
+        render(conn, "show.json", note: note)
       {:error, changeset} ->
         conn
         |> put_status(:unprocessable_entity)
@@ -46,11 +46,11 @@ defmodule Hone.UserController do
   end
 
   def delete(conn, %{"id" => id}) do
-    user = Repo.get!(User, id)
+    note = Repo.get!(Note, id)
 
     # Here we use delete! (with a bang) because we expect
     # it to always work (and if it does not, it will raise).
-    Repo.delete!(user)
+    Repo.delete!(note)
 
     send_resp(conn, :no_content, "")
   end

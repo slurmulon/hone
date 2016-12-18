@@ -9,7 +9,7 @@ use Mix.Config
 config :hone, Hone.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
-  secret_key_base: "3e21IbQtsNs0rzp+slTC1bXX2TNQAhdbZyITil7x0j20LGzUeLM0sfI4bwF+6kGt",
+  secret_key_base: "hzIiPp7paQw+qWtL9AcSkWI4c6TPAaKlkN3un2B/35BOMmrCYciHK3JVdmw5IVSX",
   render_errors: [accepts: ~w(html json)],
   pubsub: [name: Hone.PubSub,
            adapter: Phoenix.PubSub.PG2]

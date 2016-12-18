@@ -33,7 +33,7 @@ defmodule Hone.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_hone_key",
-    signing_salt: "coF9wPTF"
+    signing_salt: "HdTa+fp5"
 
   plug Hone.Router
 end

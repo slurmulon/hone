@@ -36,3 +36,4 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 
  - Importable / exportable workflow profiles
  - Event hooks
+ - GraphQL

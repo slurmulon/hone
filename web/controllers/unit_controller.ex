@@ -1,24 +1,24 @@
-defmodule Hone.UserController do
+defmodule Hone.UnitController do
   use Hone.Web, :controller
 
-  alias Hone.User
+  alias Hone.Unit
 
-  plug :scrub_params, "user" when action in [:create, :update]
+  plug :scrub_params, "unit" when action in [:create, :update]
 
   def index(conn, _params) do
-    users = Repo.all(User)
-    render(conn, "index.json", users: users)
+    units = Repo.all(Unit)
+    render(conn, "index.json", units: units)
   end
 
-  def create(conn, %{"user" => user_params}) do
-    changeset = User.changeset(%User{}, user_params)
+  def create(conn, %{"unit" => unit_params}) do
+    changeset = Unit.changeset(%Unit{}, unit_params)
 
     case Repo.insert(changeset) do
-      {:ok, user} ->
+      {:ok, unit} ->
         conn
         |> put_status(:created)
-        |> put_resp_header("location", user_path(conn, :show, user))
-        |> render("show.json", user: user)
+        |> put_resp_header("location", unit_path(conn, :show, unit))
+        |> render("show.json", unit: unit)
       {:error, changeset} ->
         conn
         |> put_status(:unprocessable_entity)
@@ -27,17 +27,17 @@ defmodule Hone.UserController do
   end
 
   def show(conn, %{"id" => id}) do
-    user = Repo.get!(User, id)
-    render(conn, "show.json", user: user)
+    unit = Repo.get!(Unit, id)
+    render(conn, "show.json", unit: unit)
   end
 
-  def update(conn, %{"id" => id, "user" => user_params}) do
-    user = Repo.get!(User, id)
-    changeset = User.changeset(user, user_params)
+  def update(conn, %{"id" => id, "unit" => unit_params}) do
+    unit = Repo.get!(Unit, id)
+    changeset = Unit.changeset(unit, unit_params)
 
     case Repo.update(changeset) do
-      {:ok, user} ->
-        render(conn, "show.json", user: user)
+      {:ok, unit} ->
+        render(conn, "show.json", unit: unit)
       {:error, changeset} ->
         conn
         |> put_status(:unprocessable_entity)
@@ -46,11 +46,11 @@ defmodule Hone.UserController do
   end
 
   def delete(conn, %{"id" => id}) do
-    user = Repo.get!(User, id)
+    unit = Repo.get!(Unit, id)
 
     # Here we use delete! (with a bang) because we expect
     # it to always work (and if it does not, it will raise).
-    Repo.delete!(user)
+    Repo.delete!(unit)
 
     send_resp(conn, :no_content, "")
   end

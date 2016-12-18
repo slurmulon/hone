@@ -16,16 +16,19 @@ defmodule Hone.Router do
   scope "/", Hone do
     pipe_through :browser # Use the default browser stack
 
+    get "/", PageController, :index
   end
 
+  # Other scopes may use custom stacks.
   scope "/api", Hone do
     pipe_through :api
 
-    get "/", PageController, :index
-    resources "/users", UserController
-    # resources "/projects", ProjectController
-    # resources "/boards", BoardController
-    # resources "/stages", StageController
-    # resources "/untis", UnitController # TODO: /units/:id/subs
+    resources "/boards", BoardController, except: [:new, :edit]
+    resources "/projects", ProjectController, except: [:new, :edit]
+    resources "/stages", StageController, except: [:new, :edit]
+    resources "/units", UnitController, except: [:new, :edit]
+    resources "/notes", NoteController, except: [:new, :edit]
+    resources "/tags", TagController, except: [:new, :edit]
+    resources "/users", UserController, except: [:new, :edit]
   end
 end
