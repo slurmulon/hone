@@ -8,6 +8,7 @@ defmodule Hone.Unit do
     has_many :units, Hone.Unit, on_delete: :delete_all
     has_many :tags, Hone.Tag
     has_many :notes, Hone.Note, on_delete: :delete_all
+    belongs_to :unit, Hone.Stage#, on_delete: :delete_all
     belongs_to :stage, Hone.Stage
     many_to_many :users, Hone.User, join_through: "users_units"
 

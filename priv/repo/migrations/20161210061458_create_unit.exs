@@ -6,6 +6,7 @@ defmodule Hone.Repo.Migrations.CreateUnit do
       add :title, :string
       add :body, :string
       add :size, :integer
+      add :unit_id, references(:units, on_delete: :nilify_all)
       add :stage_id, references(:stages, on_delete: :nilify_all)
 
       timestamps
