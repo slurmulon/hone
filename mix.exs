@@ -48,6 +48,6 @@ defmodule Hone.Mixfile do
   defp aliases do
     ["ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
      "ecto.reset": ["ecto.drop", "ecto.setup"],
-     "test": ["ecto.drop", "ecto.create --quiet", "ecto.migrate", "test"]] # TODO: verify ecto.drop is safe here!
+     "test": ["ecto.create --quiet", "ecto.migrate", "test"]] # TODO: verify ecto.drop is safe here!
   end
 end
