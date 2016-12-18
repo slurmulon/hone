@@ -6,7 +6,7 @@ defmodule Hone.Board do
     has_many :stages, Hone.Stage, on_delete: :delete_all
     has_many :units, Hone.Unit, on_delete: :delete_all
     many_to_many :users, Hone.User, join_through: "users_boards"
-    belongs_to :project, Hone.Project#, foreign_key: :project_id
+    belongs_to :project, Hone.Project
 
     timestamps
   end

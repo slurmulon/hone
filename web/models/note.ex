@@ -3,8 +3,8 @@ defmodule Hone.Note do
 
   schema "notes" do
     field :body, :string
-    belongs_to :user, Hone.User, foreign_key: :user_id
-    belongs_to :unit, Hone.Unit, foreign_key: :unit_id
+    belongs_to :user, Hone.User
+    belongs_to :unit, Hone.Unit
 
     timestamps
   end
