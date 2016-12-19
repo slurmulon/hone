@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo|Nunito" rel="stylesheet">
     <script src="<%= static_path(@conn, "/js/app.js") %>" async defer></script>
   </head>
 
@@ -39,32 +40,32 @@
           <a class="pure-menu-heading" href="#">hone</a>
 
           <ul class="pure-menu-list">
-              <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">
-                  <i class="fa fa-plus" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
-                <a href="#" class="pure-menu-link">
-                  <i class="fa fa-tags" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
-                <a href="#" class="pure-menu-link">
-                  <i class="fa fa-comments-o" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">
-                  <i class="fa fa-cogs" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+              <a href="#" class="pure-menu-link">
+                <i class="fa fa-tags" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+              <a href="#" class="pure-menu-link">
+                <i class="fa fa-comments-o" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">
+                <i class="fa fa-cogs" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
