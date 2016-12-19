@@ -9,6 +9,9 @@ defmodule Hone.Tag do
     timestamps
   end
 
+  @required_fields ~w(label color)a
+  @optional_fields ~w()a
+
   @doc """
   Creates a changeset based on the `model` and `params`.
 
@@ -17,7 +20,7 @@ defmodule Hone.Tag do
   """
   def changeset(model, params \\ %{}) do
     model
-    |> cast(params, [:label, :color])
-    |> validate_required([:label, :color])
+    |> cast(params, @required_fields ++ @optional_fields)
+    |> validate_required(@required_fields)
   end
 end

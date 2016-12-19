@@ -16,8 +16,8 @@ defmodule Hone.Unit do
     timestamps
   end
 
-  # @required_fields ~w(title body size)
-  # @optional_fields ~w(units tags notes stage)
+  # @required_fields ~w(title body size)a
+  # @optional_fields ~w(units tags notes stage)a
 
   @doc """
   Creates a changeset based on the `model` and `params`.
@@ -27,6 +27,8 @@ defmodule Hone.Unit do
   """
   def changeset(model, params \\ %{}) do
     model
+    # |> cast(params, @required_fields ++ @optional_fields)
+    # |> validate_required(@required_fields)
     |> cast(params, [:title, :body, :size])
     |> validate_required([:title])
   end
