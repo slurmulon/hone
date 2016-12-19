@@ -22,6 +22,7 @@
 - https://github.com/phoenixframework/phoenix_guides/blob/master/docs/bonus_guides/mix_tasks.md
 - https://www.coshx.com/blog/2016/03/16/json-api-with-phoenix/
 - http://www.phoenixframework.org/docs/ecto-models#section-data-relationship-and-dependencies
+- http://matthewlehner.net/using-webpack-with-phoenix-and-elixir/
 
 # PostgreSQL
 
@@ -38,3 +39,4 @@
 # Example Projects
 
 - https://github.com/kenta-aktsk/media_sample/
+- https://github.com/tiagobarreto/simple-crud-elixir-phoenix-angularjs
