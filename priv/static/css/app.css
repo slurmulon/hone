@@ -147,6 +147,8 @@ This styles the selected menu item `<li>`.
 #menu .pure-menu-heading {
   /*background: #B9CC66;*/
   background: #96C161;
+  /*background: #D46A6A;*/
+  /*background: #6C4E90;*/
 }
 /*
 This styles a link within a selected menu item `<li>`.

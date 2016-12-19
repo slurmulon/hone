@@ -54,6 +54,11 @@
                   <i class="fa fa-tags" aria-hidden="true"></i>
                 </a>
               </li>
+              <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
+                <a href="#" class="pure-menu-link">
+                  <i class="fa fa-comments-o" aria-hidden="true"></i>
+                </a>
+              </li>
               <li class="pure-menu-item">
                 <a href="#" class="pure-menu-link">
                   <i class="fa fa-cogs" aria-hidden="true"></i>
