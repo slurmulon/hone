@@ -1,10 +1,20 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   color: #777;
+  background: #333;
 }
 
 .pure-img-responsive {
   max-width: 100%;
   height: auto;
+}
+
+#layout, #main, .board, .stage {
+  height: 100%;
 }
 
 /*
@@ -27,6 +37,7 @@ This is the parent `<div>` that contains the menu and the content area.
   position: relative;
   left: 0;
   padding-left: 0;
+  height: 100%;
 }
 
 #layout.active #menu {
@@ -50,31 +61,29 @@ The content `<div>` is where all your content goes.
 }
 
 .header {
-   margin: 0;
-   color: #333;
-   text-align: center;
-   padding: 2.5em 2em 0;
-   border-bottom: 1px solid #eee;
+  margin: 0;
+  color: #333;
+  text-align: center;
+  padding: 2.5em 2em 0;
+  border-bottom: 1px solid #eee;
  }
-  .header h1 {
-    margin: 0.2em 0;
-    font-size: 3em;
-    font-weight: 300;
-  }
-   .header h2 {
-    font-weight: 300;
-    color: #ccc;
-    padding: 0;
-    margin-top: 0;
-  }
+.header h1 {
+  margin: 0.2em 0;
+  font-size: 3em;
+  font-weight: 300;
+}
+ .header h2 {
+  font-weight: 300;
+  color: #ccc;
+  padding: 0;
+  margin-top: 0;
+}
 
 .content-subhead {
   margin: 50px 0 20px 0;
   font-weight: 300;
   color: #888;
 }
-
-
 
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
@@ -100,7 +109,10 @@ All anchors inside the menu should be styled like this.
 #menu a {
   color: #999;
   border: none;
-  padding: 0.6em 0 0.6em 0.6em;
+  /*padding: 0.6em 0 0.6em 0.6em;*/
+  padding: 0.8em 1em 0.8em 0;
+  font-size: 1.5em;
+  text-align: right;
 }
 
 /*
@@ -147,7 +159,7 @@ This styles a link within a selected menu item `<li>`.
 This styles the menu heading.
 */
 #menu .pure-menu-heading {
-  font-size: 110%;
+  font-size: 120%;
   color: #fff;
   margin: 0;
   padding-top: 2.0em;
@@ -253,9 +265,10 @@ Main board
 /*  flex-direction: row;
   flex-wrap: nowrap;*/
   flex: 1 100%;
-  background: #777;
+  /*background: #777;*/
+  /*background: #191818;*/
   border-right: 1px solid black;
-  color: #fff;
+  color: #999;
   text-align: center;
 }
 
