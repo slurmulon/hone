@@ -72,31 +72,52 @@
       <div id="main">
         <div class="board">
           <div class="stage">
-            <h3>Product Review</h3>
+            <div class="label">
+              <h3>Product Review</h3>
+            </div>
+            <div class="unit">
+              #1 Some work
+            </div>
           </div>
           <div class="stage">
-            <h3>Technical Review</h3>
+            <div class="label">
+              <h3>Technical Review</h3>
+            </div>
           </div>
           <div class="stage">
-            <h3>Backlog</h3>
+            <div class="label">
+              <h3>Backlog</h3>
+            </div>
           </div>
           <div class="stage">
-            <h3>Developing</h3>
+            <div class="label">
+              <h3>Developing</h3>
+            </div>
           </div>
           <div class="stage">
-            <h3>Dev Complete</h3>
+            <div class="label">
+              <h3>Dev Complete</h3>
+            </div>
           </div>
           <div class="stage">
-            <h3>PR Open</h3>
+            <div class="label">
+              <h3>PR Open</h3>
+            </div>
           </div>
           <div class="stage">
-            <h3>Merged</h3>
+            <div class="label">
+              <h3>Merged</h3>
+            </div>
           </div>
           <div class="stage">
-            <h3>In Testing</h3>
+            <div class="label">
+              <h3>In Testing</h3>
+            </div>
           </div>
           <div class="stage">
-            <h3>Closed</h3>
+            <div class="label">
+              <h3>Closed</h3>
+            </div>
           </div>
         </div>
       </div>

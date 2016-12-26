@@ -9,6 +9,9 @@ defmodule Hone.Project do
     timestamps
   end
 
+  @required_fields ~w(name)a
+  @optional_fields ~w()a
+
   @doc """
   Creates a changeset based on the `model` and `params`.
 
@@ -17,7 +20,7 @@ defmodule Hone.Project do
   """
   def changeset(model, params \\ %{}) do
     model
-    |> cast(params, [:name])
-    |> validate_required([:name])
+    |> cast(params, @required_fields ++ @optional_fields)
+    |> validate_required(@required_fields)
   end
 end
