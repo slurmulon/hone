@@ -10,30 +10,16 @@
     <title>Welcome to Hone</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <%# <link rel="stylesheet" href="<%= static_path(@conn, "/css/lib/font-awesome.min.css") %1>"> %>
+    <%# <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> %>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/lib/pure-min.css") %>">
+    <%# <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css"> %>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/lib/grids-responsive-min.css") %>">
     <link href="https://fonts.googleapis.com/css?family=Exo|Nunito" rel="stylesheet">
     <script src="<%= static_path(@conn, "/js/app.js") %>" async defer></script>
   </head>
 
   <body>
-    <%# <div class="container"> %>
-      <%# <header class="header"> %>
-      <%#   <nav role="navigation"> %>
-      <%#     <ul class="nav nav-pills pull-right"> %>
-      <%#       <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li> %>
-      <%#     </ul> %>
-      <%#   </nav> %>
-      <%#   <span class="logo"></span> %>
-      <%# </header> %>
-
-      <%# <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %1></p> %>
-      <%# <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %1></p> %>
-
-      <%# <main role="main"> %>
-      <%#   <%= render @view_module, @view_template, assigns %1> %>
-      <%# </main> %>
-    <%# </div> %>
     <div id="layout">
       <div id="menu">
         <div class="pure-menu">
@@ -62,6 +48,11 @@
             </li>
             <li class="pure-menu-item">
               <a href="#" class="pure-menu-link">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">
                 <i class="fa fa-cogs" aria-hidden="true"></i>
               </a>
             </li>
@@ -76,7 +67,12 @@
               <h3>Product Review</h3>
             </div>
             <div class="unit">
-              #1 Some work
+              <div class="id">#1</div>
+              <div class="assignee"></div>
+              <div class="summary">Lorem Ipsum</div>
+            </div>
+            <div class="unit">
+              #2 Some work
             </div>
           </div>
           <div class="stage">
