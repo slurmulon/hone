@@ -275,7 +275,7 @@ Main board
   flex: 1 100%;
   /*background: #777;*/
   /*background: #191818;*/
-  border-right: 1px solid black;
+  border-left: 1px solid black;
   color: #999;
   text-align: center;
   /* padding: 0 0.75em; */
@@ -296,13 +296,15 @@ Main board
 
 .board .stage .label h3 {
   padding: 0.5em 0;
+  font-weight: 200;
   /* color: #d1fff9; */
   /* border-bottom: 1px soild #000; */
 }
 
 .board .stage .unit {
   /* width: 100%; */
-  /* display: block; */
+  display: flex;
+  flex-flow: row wrap; /* EXPERIMENT */
   border: 1px solid black;
   padding: 0.5em 0;
   margin: 0.75em;
@@ -320,9 +322,37 @@ Main board
 }
 
 .board .stage .unit .id {
-  float: left;
+  /* float: left; */
+  /* display: inline-flex; */
+  /* display: flex; */
+  flex: 1 auto;
+  /* flex: 1 25%; */
+  /* flex-basis: 20%; */
   background: black;
-  padding: 0.25em
+  padding: 0.25em;
+  margin-right: 0.25em;
+}
+
+.board .stage .unit .summary {
+  /* display: inline-flex; */
+  /* flex: 2 75%; */
+  /* display: flex; */
+  flex: 3 auto;
+  /* flex-basis: 80%; */
+  background: yellow;
+}
+
+.board .stage .unit .badges {
+  /* display: inline-flex; */
+  /* display: flex; */
+  flex: 1 100%;
+  justify-content: space-around;
+}
+
+.board .stage .unit .badges .badge {
+  display: inline-block;
+  content: "Badge";
+  background: pink;
 }
 
 /* .board .stage .edit { */
