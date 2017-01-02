@@ -313,10 +313,11 @@ Main board
   border-radius: 5px;
   background: #484848;
   transition: all 0.1s linear;
+  cursor: move;
 }
 
 .board .stage .unit:hover {
-  cursor: pointer;
+  cursor: drag;
   background: #585858;
 }
 
@@ -327,13 +328,13 @@ Main board
 }
 
 .board .stage .unit .banner .id {
-  /* float: left; */
   flex: 1 25%;
-  background: black;
+  background: #222;
   font-size: 80%;
   padding: 0.25em;
   margin-right: 0.25em;
   border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
 .board .stage .unit .banner .controls {
@@ -351,6 +352,7 @@ Main board
 .board .stage .unit .summary {
   flex: 3 auto;
   padding: 0.25em 0.75em;
+  cursor: text;
   /* text-align: left; */
 }
 
