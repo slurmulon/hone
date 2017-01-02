@@ -302,7 +302,6 @@ Main board
 }
 
 .board .stage .unit {
-  /* width: 100%; */
   display: flex;
   flex-flow: row wrap; /* EXPERIMENT */
   border: 1px solid black;
@@ -321,38 +320,54 @@ Main board
   background: #585858;
 }
 
-.board .stage .unit .id {
+.board .stage .unit .banner {
+  display: inline-flex;
+  flex: 1 100%;
+  align-items: center;
+}
+
+.board .stage .unit .banner .id {
   /* float: left; */
-  /* display: inline-flex; */
-  /* display: flex; */
-  flex: 1 auto;
-  /* flex: 1 25%; */
-  /* flex-basis: 20%; */
+  flex: 1 25%;
   background: black;
+  font-size: 80%;
   padding: 0.25em;
   margin-right: 0.25em;
+  border-radius: 0 5px 5px 0;
+}
+
+.board .stage .unit .banner .controls {
+  display: inline-flex;
+  flex: 3 75%;
+  justify-content: flex-end;
+  padding: 0.25em;
+}
+
+.board .stage .unit .banner .controls a {
+  color: #609ca5;
+  padding: 0 0.25em;
 }
 
 .board .stage .unit .summary {
-  /* display: inline-flex; */
-  /* flex: 2 75%; */
-  /* display: flex; */
   flex: 3 auto;
-  /* flex-basis: 80%; */
-  background: yellow;
+  padding: 0.25em 0.75em;
+  /* text-align: left; */
 }
 
 .board .stage .unit .badges {
-  /* display: inline-flex; */
-  /* display: flex; */
   flex: 1 100%;
   justify-content: space-around;
+  padding-top: 0.5em
 }
 
 .board .stage .unit .badges .badge {
   display: inline-block;
   content: "Badge";
-  background: pink;
+  background: #565695;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.25em 0.5em;
+  font-size: 80%;
 }
 
 /* .board .stage .edit { */

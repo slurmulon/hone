@@ -67,17 +67,23 @@
               <h3>Product Review</h3>
             </div>
             <div class="unit">
-              <div class="id">#1</div>
+              <div class="banner">
+                <div class="id">#123</div>
+                <div class="controls">
+                  <a href>
+                    <i class="fa fa-edit" aria-hidden="true"></i>
+                  </a>
+                  <a href>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
               <%# <div class="assignee"></div> %>
-              <div class="summary">Lorem Ipsum</div>
+              <div class="summary">Lorem Ipsum Worksem</div>
               <div class="badges">
                 <div class="badge">5</div>
                 <div class="badge">B</div>
-                <div class="badge"></div>
               </div>
-            </div>
-            <div class="unit">
-              #2 Some work
             </div>
           </div>
           <div class="stage">
