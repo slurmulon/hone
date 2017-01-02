@@ -349,17 +349,34 @@ Main board
   padding: 0 0.25em;
 }
 
-.board .stage .unit .summary {
-  flex: 3 auto;
-  padding: 0.25em 0.75em;
+.board .stage .unit .title {
+  flex: 1 100%;
+  padding: 0.75em 0.75em;
   cursor: text;
   /* text-align: left; */
 }
 
+.board .stage .unit .assignee {
+  display: inline-flex;
+  /* flex: 1 0px; */
+}
+
+.board .stage .unit .assignee img {
+  max-width: 50px;
+  max-height: 50px;
+  margin-left: 0.5em;
+}
+
 .board .stage .unit .badges {
-  flex: 1 100%;
-  justify-content: space-around;
-  padding-top: 0.5em
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* justify-content: flex-end; */
+  /* flex: 1 100%; */
+  display: flex;
+  flex: 2 0px;
+  padding-top: 0.5em;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .board .stage .unit .badges .badge {
@@ -369,7 +386,9 @@ Main board
   border: 1px solid black;
   border-radius: 5px;
   padding: 0.25em 0.5em;
+  margin-right: 0.5em;
   font-size: 80%;
+  cursor: default;
 }
 
 /* .board .stage .edit { */

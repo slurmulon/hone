@@ -61,6 +61,7 @@
       </div>
 
       <div id="main">
+        <!-- TODO: might be better to re-do this as `display: table` to easily allow sticky menus -->
         <div class="board">
           <div class="stage">
             <div class="label">
@@ -78,8 +79,10 @@
                   </a>
                 </div>
               </div>
-              <%# <div class="assignee"></div> %>
-              <div class="summary">Lorem Ipsum Worksem</div>
+              <div class="title">Lorem Ipsum Worksem</div>
+              <div class="assignee">
+                <img src="https://api.adorable.io/avatars/285/hone@tickets.png" />
+              </div>
               <div class="badges">
                 <div class="badge">5</div>
                 <div class="badge">B</div>
@@ -127,6 +130,9 @@
             </div>
           </div>
         </div>
+        <%# <div class="browse"> %>
+        <%#   Browsing %>
+        <%# </div> %>
       </div>
     </div>
   </body>
