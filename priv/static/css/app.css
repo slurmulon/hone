@@ -1,6 +1,6 @@
-/** {
+* {
   box-sizing: border-box;
-}*/
+}
 
 html, body {
   height: 100%;
@@ -62,6 +62,7 @@ The content `<div>` is where all your content goes.
   margin: 0 auto;
   padding: 0 2em;
   max-width: 800px;
+
   margin-bottom: 50px;
   line-height: 1.6em;
 }
@@ -259,6 +260,23 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   }
 }
 
+#main {
+  display: flex;
+}
+
+/*
+ * Main Settings
+ */
+.settings {
+  flex: 1 10%;
+  background: #191818;
+  padding: 1em 1.5em;
+}
+
+.settings select {
+  width: 100%;
+}
+
 /*
 Main board
 */
@@ -269,6 +287,7 @@ Main board
   justify-content: space-around;
   align-items: stretch;
   /* align-items: center; */
+  flex: 1 90%;
 }
 
 .board .stage {
@@ -295,7 +314,7 @@ Main board
 }
 
 .board .stage .label h3 {
-  padding: 0.5em 0;
+  padding: 0.5em;
   font-weight: 200;
   /* color: #d1fff9; */
   /* border-bottom: 1px soild #000; */
@@ -352,7 +371,7 @@ Main board
 .board .stage .unit .title {
   flex: 1 100%;
   padding: 0.75em 0.75em;
-  cursor: text;
+  /* cursor: text; */
   /* text-align: left; */
 }
 
@@ -362,8 +381,8 @@ Main board
 }
 
 .board .stage .unit .assignee img {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 40px;
+  max-height: 40px;
   margin-left: 0.5em;
 }
 
@@ -388,7 +407,7 @@ Main board
   padding: 0.25em 0.5em;
   margin-right: 0.5em;
   font-size: 80%;
-  cursor: default;
+  /* cursor: default; */
 }
 
 /* .board .stage .edit { */
@@ -412,4 +431,15 @@ Media queries
     position: relative;
     left: 150px;
   }
+}
+
+// Mixins
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently not supported by any browser */
 }
