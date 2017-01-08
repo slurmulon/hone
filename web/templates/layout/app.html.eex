@@ -99,50 +99,7 @@
             <% end %>
           </div>
           <% end %>
-          <%# <div class="stage"> %>
-          <%#   <div class="label"> %>
-          <%#     <h3>Technical Review</h3> %>
-          <%#   </div> %>
-          <%# </div> %>
-          <%# <div class="stage">
-            <div class="label">
-              <h3>Backlog</h3>
-            </div>
-          </div>
-          <div class="stage">
-            <div class="label">
-              <h3>Developing</h3>
-            </div>
-          </div>
-          <div class="stage">
-            <div class="label">
-              <h3>Dev Complete</h3>
-            </div>
-          </div>
-          <div class="stage">
-            <div class="label">
-              <h3>PR Open</h3>
-            </div>
-          </div>
-          <div class="stage">
-            <div class="label">
-              <h3>Merged</h3>
-            </div>
-          </div>
-          <div class="stage">
-            <div class="label">
-              <h3>In Testing</h3>
-            </div>
-          </div>
-          <div class="stage">
-            <div class="label">
-              <h3>Closed</h3>
-            </div>
-          </div> %>
         </div>
-        <%# <div class="browse"> %>
-        <%#   Browsing %>
-        <%# </div> %>
 
         <div class="settings">
           <div class="pure-form pure-form-stacked">
