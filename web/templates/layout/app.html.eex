@@ -88,7 +88,7 @@
               </div>
               <div class="title">Lorem Ipsum Worksem</div>
               <div class="assignee">
-                <img src="https://api.adorable.io/avatars/285/hone@tickets.png" />
+                <img src="https://api.adorable.io/avatars/285/hone-<%= :rand.uniform(25) %>@tickets.png" />
               </div>
               <div class="badges">
                 <div class="badge">5</div>
@@ -145,7 +145,39 @@
         <div class="settings">
           <div class="pure-form pure-form-stacked">
             <fieldset>
-              <%# <legend>Settings</legend> %>
+              <%# <div class="pure-g">
+                <legend>Settings</legend> %>
+                <%# <div class="pure-u-1-2">
+                  <label for="board">Board</label>
+                </div>
+                <div class="pure-u-2-2">
+                  <select id="board">
+                    <option>Foo</option>
+                    <option>Bar</option>
+                    <option>Baz</option>
+                  </select>
+                </div>
+                <div class="pure-u-1-2">
+                  <label for="assignee">Assignee</label>
+                </div>
+                <div class="pure-u-2-2">
+                  <select id="assignee">
+                    <option>None</option>
+                    <option>Bob</option>
+                    <option>Darla</option>
+                  </select>
+                </div>
+                <div class="pure-u-1-2">
+                  <label for="milestone">Milestone</label>
+                </div>
+                <div class="pure-u-2-2">
+                  <select id="milestone">
+                    <option>None</option>
+                    <option>1.15.17</option>
+                    <option>2.1.17</option>
+                  </select>
+                </div>
+              </div> %>
               <label for="board">Board</label>
               <select id="board">
                 <option>Foo</option>

@@ -280,10 +280,19 @@ Hides the menu at `48em`, but modify this based on your app's needs.
  * Main Settings
  */
 .settings {
+  display: flex;
   flex: 1 10%;
   background: #191818;
   border-left: 1px solid black;
   /* padding: 1em 1.5em; */
+}
+
+.settings .pure-form {
+  width: 100%;
+}
+
+.settings .pure-g {
+  /*padding: 0.5em;*/
 }
 
 .settings label {
@@ -334,7 +343,9 @@ Main board
 
 .stage::-webkit-scrollbar-thumb {
   max-height: 100px;
-  background-color: #565695;
+  background-color: #609ca5;
+  /*background-color: #619990;*/
+  /*background-color: #565695;*/
   /*background-color: #000;*/
   background-image: -webkit-gradient(linear, 0 0, 0 100%,
                     color-stop(.5, rgba(255, 255, 255, .2)),
