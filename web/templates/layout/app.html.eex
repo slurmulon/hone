@@ -8,13 +8,13 @@
     <meta name="author" content="">
 
     <title>Welcome to Hone</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
     <%# <link rel="stylesheet" href="<%= static_path(@conn, "/css/lib/font-awesome.min.css") %1>"> %>
     <%# <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"> %>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/lib/pure-min.css") %>">
     <%# <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css"> %>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/lib/grids-responsive-min.css") %>">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link href="https://fonts.googleapis.com/css?family=Exo|Nunito" rel="stylesheet">
     <script src="<%= static_path(@conn, "/js/app.js") %>" async defer></script>
   </head>
@@ -73,9 +73,10 @@
               <%# <h3>Product Review</h3> %>
               <h3>Review</h3>
             </div>
+            <%= for id <- 1..5 do %>
             <div class="unit">
               <div class="banner">
-                <div class="id">#123</div>
+                <div class="id">#<%= id %></div>
                 <div class="controls">
                   <a href>
                     <i class="fa fa-edit" aria-hidden="true"></i>
@@ -94,6 +95,7 @@
                 <div class="badge">B</div>
               </div>
             </div>
+            <% end %>
           </div>
           <%# <div class="stage"> %>
           <%#   <div class="label"> %>
@@ -150,7 +152,25 @@
                 <option>Bar</option>
                 <option>Baz</option>
               </select>
+              <label for="assignee">Assignee</label>
+              <select id="assignee">
+                <option>None</option>
+                <option>Bob</option>
+                <option>Darla</option>
+              </select>
+              <label for="milestone">Milestone</label>
+              <select id="milestone">
+                <option>None</option>
+                <option>1.15.17</option>
+                <option>2.1.17</option>
+              </select>
             </fieldset>
+            <hr/>
+            Scrolling:
+            <p>
+              Columns: <input type="checkbox"/>
+              Board: <input type="checkbox"/>
+            </p>
           </div>
         </div>
       </div>

@@ -14,6 +14,18 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+.pure-form input, .pure-form select {
+  /* border-top: 1px solid pink; */
+  /* border-bottom: 1px solid pink; */
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  border-left: none;
+  border-right: none;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 .pure-img-responsive {
   max-width: 100%;
   height: auto;
@@ -270,7 +282,12 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 .settings {
   flex: 1 10%;
   background: #191818;
-  padding: 1em 1.5em;
+  border-left: 1px solid black;
+  /* padding: 1em 1.5em; */
+}
+
+.settings label {
+  text-align: center;
 }
 
 .settings select {
@@ -288,6 +305,8 @@ Main board
   align-items: stretch;
   /* align-items: center; */
   flex: 1 90%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .board .stage {
@@ -298,7 +317,36 @@ Main board
   color: #999;
   text-align: center;
   /* padding: 0 0.75em; */
+  height: 100%;
+  overflow: auto;
   transition: background 0.35s ease;
+}
+
+.stage::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+  background-color: #222;
+}
+
+.stage::-webkit-scrollbar {
+  width: 4px;
+  background-color: #222;
+}
+
+.stage::-webkit-scrollbar-thumb {
+  max-height: 100px;
+  background-color: #565695;
+  /*background-color: #000;*/
+  background-image: -webkit-gradient(linear, 0 0, 0 100%,
+                    color-stop(.5, rgba(255, 255, 255, .2)),
+                    color-stop(.5, transparent), to(transparent));
+  /*background-image: -webkit-linear-gradient(45deg,
+                      rgba(255, 255, 255, .2) 25%,
+                      transparent 25%,
+                      transparent 50%,
+                      rgba(255, 255, 255, .2) 50%,
+                      rgba(255, 255, 255, .2) 75%,
+                      transparent 75%,
+                      transparent);*/
 }
 
 .board .stage:hover {
