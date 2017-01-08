@@ -56,6 +56,11 @@
                 <i class="fa fa-cogs" aria-hidden="true"></i>
               </a>
             </li>
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -65,7 +70,8 @@
         <div class="board">
           <div class="stage">
             <div class="label">
-              <h3>Product Review</h3>
+              <%# <h3>Product Review</h3> %>
+              <h3>Review</h3>
             </div>
             <div class="unit">
               <div class="banner">
@@ -89,11 +95,11 @@
               </div>
             </div>
           </div>
-          <div class="stage">
-            <div class="label">
-              <h3>Technical Review</h3>
-            </div>
-          </div>
+          <%# <div class="stage"> %>
+          <%#   <div class="label"> %>
+          <%#     <h3>Technical Review</h3> %>
+          <%#   </div> %>
+          <%# </div> %>
           <div class="stage">
             <div class="label">
               <h3>Backlog</h3>
@@ -133,6 +139,20 @@
         <%# <div class="browse"> %>
         <%#   Browsing %>
         <%# </div> %>
+
+        <div class="settings">
+          <div class="pure-form pure-form-stacked">
+            <fieldset>
+              <%# <legend>Settings</legend> %>
+              <label for="board">Board</label>
+              <select id="board">
+                <option>Foo</option>
+                <option>Bar</option>
+                <option>Baz</option>
+              </select>
+            </fieldset>
+          </div>
+        </div>
       </div>
     </div>
   </body>
