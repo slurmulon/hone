@@ -68,12 +68,13 @@
       <div id="main">
         <!-- TODO: might be better to re-do this as `display: table` to easily allow sticky menus -->
         <div class="board">
+          <%= for stage <- ["Review", "Backlog", "Developing", "Dev Complete", "PR Open", "Merged", "Testing", "Closed"] do %>
           <div class="stage">
             <div class="label">
               <%# <h3>Product Review</h3> %>
-              <h3>Review</h3>
+              <h3><%= stage %></h3>
             </div>
-            <%= for id <- 1..5 do %>
+            <%= for id <- 1..Enum.random(1..10) do %>
             <div class="unit">
               <div class="banner">
                 <div class="id">#<%= id %></div>
@@ -97,12 +98,13 @@
             </div>
             <% end %>
           </div>
+          <% end %>
           <%# <div class="stage"> %>
           <%#   <div class="label"> %>
           <%#     <h3>Technical Review</h3> %>
           <%#   </div> %>
           <%# </div> %>
-          <div class="stage">
+          <%# <div class="stage">
             <div class="label">
               <h3>Backlog</h3>
             </div>
@@ -136,7 +138,7 @@
             <div class="label">
               <h3>Closed</h3>
             </div>
-          </div>
+          </div> %>
         </div>
         <%# <div class="browse"> %>
         <%#   Browsing %>
