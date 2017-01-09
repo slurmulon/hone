@@ -10,20 +10,61 @@ html, body {
 body {
   color: #777;
   background: #333;
+  /*background: #191818;*/
   /*font-family: 'Quattrocento Sans', sans-serif;*/
   font-family: 'Nunito', sans-serif;
 }
 
-.pure-form input, .pure-form select {
-  /* border-top: 1px solid pink; */
-  /* border-bottom: 1px solid pink; */
-  border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
+/*
+Scrollbars
+*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+  background-color: #222;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  max-height: 100px;
+  background-color: #609ca5;
+  /*background-color: #619990;*/
+  /*background-color: #565695;*/
+  /*background-color: #000;*/
+  background-image: -webkit-gradient(linear, 0 0, 0 100%,
+                    color-stop(.5, rgba(255, 255, 255, .2)),
+                    color-stop(.5, transparent), to(transparent));
+  /*background-image: -webkit-linear-gradient(45deg,
+                      rgba(255, 255, 255, .2) 25%,
+                      transparent 25%,
+                      transparent 50%,
+                      rgba(255, 255, 255, .2) 50%,
+                      rgba(255, 255, 255, .2) 75%,
+                      transparent 75%,
+                      transparent);*/
+}
+
+/*
+Inputs
+*/
+.pure-form input[type=text], .pure-form select {
+  /*border-top: 2px solid #333;
+  border-bottom: 2px solid #333;*/
+  border-top: 2px solid #565695;
+  border-bottom: 2px solid #565695;
   border-left: none;
   border-right: none;
   background: none;
   border-radius: 0;
   box-shadow: none;
+}
+
+.pure-form input[type=text]:focus, .pure-form select:focus {
+  border-top: 1px solid #565695;
+  border-bottom: 1px solid #565695;
 }
 
 .pure-img-responsive {
@@ -74,7 +115,6 @@ The content `<div>` is where all your content goes.
   margin: 0 auto;
   padding: 0 2em;
   max-width: 800px;
-
   margin-bottom: 50px;
   line-height: 1.6em;
 }
@@ -86,12 +126,14 @@ The content `<div>` is where all your content goes.
   padding: 2.5em 2em 0;
   border-bottom: 1px solid #eee;
  }
+
 .header h1 {
   margin: 0.2em 0;
   font-size: 3em;
   font-weight: 300;
 }
- .header h2 {
+
+.header h2 {
   font-weight: 300;
   color: #ccc;
   padding: 0;
@@ -137,8 +179,8 @@ All anchors inside the menu should be styled like this.
 /*
 Remove all background/borders, since we are applying them to #menu.
 */
- #menu .pure-menu,
- #menu .pure-menu ul {
+#menu .pure-menu,
+#menu .pure-menu ul {
   border: none;
   background: transparent;
 }
@@ -284,6 +326,8 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   flex: 1 10%;
   background: #191818;
   border-left: 1px solid black;
+  overflow-y: auto;
+  overflow-x: none;
   /* padding: 1em 1.5em; */
 }
 
@@ -297,11 +341,14 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 
 .settings label {
   text-align: center;
+  /*margin: 2em 0;*/
+  margin: 1em 0;
+  text-transform: uppercase;
 }
 
-.settings select {
+.settings select, .settings input[type=text] {
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 2.5em;
 }
 
 .settings hr {
@@ -309,6 +356,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 2em;
 }
 
 /*
@@ -337,35 +385,6 @@ Main board
   height: 100%;
   overflow: auto;
   transition: background 0.35s ease;
-}
-
-.stage::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
-  background-color: #222;
-}
-
-.stage::-webkit-scrollbar {
-  width: 4px;
-  background-color: #222;
-}
-
-.stage::-webkit-scrollbar-thumb {
-  max-height: 100px;
-  background-color: #609ca5;
-  /*background-color: #619990;*/
-  /*background-color: #565695;*/
-  /*background-color: #000;*/
-  background-image: -webkit-gradient(linear, 0 0, 0 100%,
-                    color-stop(.5, rgba(255, 255, 255, .2)),
-                    color-stop(.5, transparent), to(transparent));
-  /*background-image: -webkit-linear-gradient(45deg,
-                      rgba(255, 255, 255, .2) 25%,
-                      transparent 25%,
-                      transparent 50%,
-                      rgba(255, 255, 255, .2) 50%,
-                      rgba(255, 255, 255, .2) 75%,
-                      transparent 75%,
-                      transparent);*/
 }
 
 .board .stage:hover {

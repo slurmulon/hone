@@ -48,6 +48,11 @@
             </li>
             <li class="pure-menu-item">
               <a href="#" class="pure-menu-link">
+                <i class="fa fa-suitcase" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">
                 <i class="fa fa-eye" aria-hidden="true"></i>
               </a>
             </li>
@@ -143,25 +148,44 @@
                 <option>Bar</option>
                 <option>Baz</option>
               </select>
+
               <label for="assignee">Assignee</label>
               <select id="assignee">
+                <option>Any</option>
                 <option>None</option>
                 <option>Bob</option>
                 <option>Darla</option>
               </select>
+
               <label for="milestone">Milestone</label>
               <select id="milestone">
+                <option>Any</option>
                 <option>None</option>
                 <option>1.15.17</option>
                 <option>2.1.17</option>
               </select>
+
+              <label for="milestone">Stages</label>
+              <select id="milestone">
+                <option>Any</option>
+                <option>Backlog</option>
+                <option>Developing</option>
+              </select>
+
+              <hr/>
+
+              <label for="tags">Keywords</label>
+              <input id="tags" type="text" />
+
+              <label for="tags">Tags</label>
+              <input id="tags" type="text" />
             </fieldset>
-            <hr/>
+            <%# <hr/>
             Scrolling:
             <p>
               Columns: <input type="checkbox"/>
               Board: <input type="checkbox"/>
-            </p>
+            </p> %>
           </div>
         </div>
       </div>
