@@ -30,9 +30,9 @@ Scrollbars
 
 ::-webkit-scrollbar-thumb {
   max-height: 100px;
-  background-color: #609ca5;
+  /*background-color: #609ca5;*/
   /*background-color: #619990;*/
-  /*background-color: #565695;*/
+  background-color: #565695;
   /*background-color: #000;*/
   background-image: -webkit-gradient(linear, 0 0, 0 100%,
                     color-stop(.5, rgba(255, 255, 255, .2)),
