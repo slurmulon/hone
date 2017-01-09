@@ -332,6 +332,13 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   /* padding: 1em 1.5em; */
 }
 
+.settings .banner {
+  width: 100%;
+  padding: 0.5em 0;
+  text-align: center;
+  border-bottom: 1px solid black; /* #333 */
+}
+
 .settings .pure-form {
   width: 100%;
 }
@@ -345,6 +352,10 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   /*margin: 2em 0;*/
   margin: 1em 0;
   text-transform: uppercase;
+}
+
+.settings label i {
+  margin-right: 1.0em;
 }
 
 .settings select, .settings input[type=text] {

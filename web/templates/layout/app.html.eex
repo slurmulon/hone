@@ -33,6 +33,11 @@
             </li>
             <li class="pure-menu-item">
               <a href="#" class="pure-menu-link">
+                <i class="fa fa-cubes" aria-hidden="true"></i> <!-- aka Layers -->
+              </a>
+            </li>
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">
                 <i class="fa fa-search" aria-hidden="true"></i>
               </a>
             </li>
@@ -108,6 +113,9 @@
 
         <div class="settings">
           <div class="pure-form pure-form-stacked">
+            <div class="banner">
+              <h3><i class="fa fa-filter" aria-hidden="true"></i></h3>
+            </div>
             <fieldset>
               <%# <div class="pure-g">
                 <legend>Settings</legend> %>
@@ -142,14 +150,27 @@
                   </select>
                 </div>
               </div> %>
-              <label for="board">Board</label>
+              <label for="project">
+                <i class="fa fa-building" aria-hidden="true"></i> Project
+              </label>
+              <select id="project">
+                <option>Project A</option>
+                <option>Project B</option>
+                <option>Project C</option>
+              </select>
+
+              <label for="board">
+                <i class="fa fa-thumb-tack" aria-hidden="true"></i> Board
+              </label>
               <select id="board">
                 <option>Foo</option>
                 <option>Bar</option>
                 <option>Baz</option>
               </select>
 
-              <label for="assignee">Assignee</label>
+              <label for="assignee">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i> Assignee
+              </label>
               <select id="assignee">
                 <option>Any</option>
                 <option>None</option>
@@ -157,7 +178,9 @@
                 <option>Darla</option>
               </select>
 
-              <label for="milestone">Milestone</label>
+              <label for="milestone">
+                <i class="fa fa-flag-checkered" aria-hidden="true"></i> Milestone
+              </label>
               <select id="milestone">
                 <option>Any</option>
                 <option>None</option>
@@ -165,19 +188,33 @@
                 <option>2.1.17</option>
               </select>
 
-              <label for="milestone">Stages</label>
-              <select id="milestone">
+              <label for="stages">
+                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Stages
+              </label>
+              <select id="stages">
                 <option>Any</option>
                 <option>Backlog</option>
                 <option>Developing</option>
               </select>
 
+              <label for="levels">
+                <i class="fa fa-cube" aria-hidden="true"></i> Level
+              </label>
+              <select id="levels">
+                <option>Any</option>
+                <option>Epic</option>
+                <option>
+              </select>
               <hr/>
 
-              <label for="tags">Keywords</label>
-              <input id="tags" type="text" />
+              <label for="keywords">
+                <i class="fa fa-key" aria-hidden="true"></i> Keywords
+              </label>
+              <input id="keywords" type="text" />
 
-              <label for="tags">Tags</label>
+              <label for="tags">
+                <i class="fa fa-tags" aria-hidden="true"></i> Tags
+              </label>
               <input id="tags" type="text" />
             </fieldset>
             <%# <hr/>
