@@ -79,10 +79,10 @@
               <%# <h3>Product Review</h3> %>
               <h3><%= stage %></h3>
             </div>
-            <%= for id <- 1..Enum.random(1..10) do %>
+            <%= for _id <- 1..Enum.random(1..10) do %>
             <div class="unit">
               <div class="banner">
-                <div class="id">#<%= id %></div>
+                <div class="id">#<%= :random.uniform(250) %></div>
                 <div class="controls">
                   <a href>
                     <i class="fa fa-edit" aria-hidden="true"></i>
