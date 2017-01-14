@@ -77,38 +77,52 @@
 
       <div id="main">
         <!-- TODO: might be better to re-do this as `display: table` to easily allow sticky menus -->
-        <div class="board noselect">
-          <%= for stage <- ["Review", "Backlog", "Developing", "Dev Complete", "PR Open", "Merged", "Testing", "Closed"] do %>
-          <div class="stage">
-            <div class="label">
-              <%# <h3>Product Review</h3> %>
-              <h3><%= stage %></h3>
-            </div>
-            <%= for _id <- 1..Enum.random(1..10) do %>
-            <div class="unit">
-              <div class="banner">
-                <div class="id">#<%= :random.uniform(250) %></div>
-                <div class="controls">
-                  <a href>
-                    <i class="fa fa-edit" aria-hidden="true"></i>
-                  </a>
-                  <a href>
-                    <i class="fa fa-trash" aria-hidden="true"></i>
-                  </a>
+        <!-- WARN: introduces an issue where zooming past 125% in Chrome causes the settings side bar to disappear. Stems from .area (try commenting it out. works at 3e8c7c) -->
+        <div class="area">
+          <div class="actions">
+            <!-- TODO: flexify this so the middle li can be way larger -->
+            <ul>
+              <li class="breadcrumbs">Project > Board</li>
+              <li class="notifications">Notifications</li>
+            </ul>
+          </div>
+
+          <div class="board noselect">
+            <%= for stage <- ["Review", "Backlog", "Developing", "Dev Complete", "PR Open", "Merged", "Testing", "Closed"] do %>
+            <div class="stage">
+              <div class="label">
+                <%# <h3>Product Review</h3> %>
+                <h3><%= stage %></h3>
+              </div>
+              <%= for _id <- 1..Enum.random(1..10) do %>
+              <div class="unit">
+                <div class="banner">
+                  <div class="id">#<%= :random.uniform(250) %></div>
+                  <div class="controls">
+                    <a href>
+                      <i class="fa fa-square-o" aria-hidden="true"></i>
+                    </a>
+                    <a href>
+                      <i class="fa fa-edit" aria-hidden="true"></i>
+                    </a>
+                    <a href>
+                      <i class="fa fa-trash" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="title">Lorem Ipsum Worksem</div>
+                <div class="assignee">
+                  <img src="https://api.adorable.io/avatars/285/hone-<%= :rand.uniform(25) %>@tickets.png" />
+                </div>
+                <div class="badges">
+                  <div class="badge">5</div>
+                  <div class="badge">B</div>
                 </div>
               </div>
-              <div class="title">Lorem Ipsum Worksem</div>
-              <div class="assignee">
-                <img src="https://api.adorable.io/avatars/285/hone-<%= :rand.uniform(25) %>@tickets.png" />
-              </div>
-              <div class="badges">
-                <div class="badge">5</div>
-                <div class="badge">B</div>
-              </div>
+              <% end %>
             </div>
             <% end %>
           </div>
-          <% end %>
         </div>
 
         <div class="settings">
