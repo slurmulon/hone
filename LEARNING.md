@@ -24,6 +24,18 @@
 - http://www.phoenixframework.org/docs/ecto-models#section-data-relationship-and-dependencies
 - http://matthewlehner.net/using-webpack-with-phoenix-and-elixir/
 
+# Sockets
+
+- https://github.com/chrismccord/phoenix_chat_example
+
+# Webpack
+
+- http://matthewlehner.net/using-webpack-with-phoenix-and-elixir/
+
+# CSS
+
+- http://cssdeck.com/labs/css3-webkit-vertical-scrollbars
+
 # PostgreSQL
 
 - http://stackoverflow.com/questions/2942485/psql-fatal-ident-authentication-failed-for-user-postgres#11545725
@@ -40,3 +52,5 @@
 
 - https://github.com/kenta-aktsk/media_sample/
 - https://github.com/tiagobarreto/simple-crud-elixir-phoenix-angularjs
+- https://github.com/chrismccord/phoenix_chat_example
+
