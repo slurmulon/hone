@@ -387,9 +387,9 @@ Main action toolbar
 }
 
 #main .area .actions {
-  display: flex;
+/*  display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-between;*/
   flex: 1 100%;
   height: 5em;
   border-bottom: 1px solid black;
@@ -398,6 +398,9 @@ Main action toolbar
 }
 
 #main .area .actions ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -412,9 +415,13 @@ Main action toolbar
   margin-right: -6px; /* TODO: determine why there's this gap in between `li`s */
 }
 
-#main .area .actions .notifications {
-  float: right;
-  border-left: 1px solid #555;
+#main .area .actions ul li:first-of-type,
+#main .area .actions ul li:last-of-type {
+  flex: 1 auto;
+}
+
+#main .area .actions .selected {
+  flex: 8 auto;
 }
 
 /*

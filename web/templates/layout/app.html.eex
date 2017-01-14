@@ -83,6 +83,7 @@
             <!-- TODO: flexify this so the middle li can be way larger -->
             <ul>
               <li class="breadcrumbs">Project > Board</li>
+              <li class="selected">Selected stuff</li>
               <li class="notifications">Notifications</li>
             </ul>
           </div>
