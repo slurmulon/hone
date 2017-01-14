@@ -11,7 +11,7 @@ config :hone, Hone.Endpoint,
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-  watchers: []
+  watchers: [npm: ["run", "watch"]]
 
 # Watch static and templates for browser reloading.
 config :hone, Hone.Endpoint,

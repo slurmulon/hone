@@ -20,7 +20,8 @@ module.exports = {
       // root: path.join(__dirname, 'node_modules'),
       // moduleDirectories: [path.join(__dirname, 'node_modules')],
       packageMains: ['json-loader']
-    }
+    },
+    modulesDirectories: [ 'node_modules', __dirname + '/web/static/js' ]
   },
   devtool: 'source-map',
   // devServer:{
@@ -31,7 +32,7 @@ module.exports = {
       { test: /\.js$/,
         // include: './public/index.js',
         exclude: /(node_modules)/,
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
           presets: ['es2015']
         }
@@ -60,7 +61,7 @@ module.exports = {
       //   hash: true
       // }),
 
-      // Patch for modules that rely on global jQuery (Semantic UI)
+      // Patch for modules that rely on global jQuery
       // new webpack.ProvidePlugin({
       //   $: 'jquery',
       //   jQuery: 'jquery'
