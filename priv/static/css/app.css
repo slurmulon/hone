@@ -58,6 +58,8 @@ Inputs
   border-left: none;
   border-right: none;
   background: none;
+  /*background: #28333e;*/
+  /*background: #1f2730;*/
   border-radius: 0;
   box-shadow: none;
 }
@@ -411,7 +413,7 @@ Main action toolbar
   display: inline-block;
   border-right: 1px solid #555;
   min-height: 5em;
-  padding: 1.75em;
+  /*padding: 1.75em;*/
   margin-right: -6px; /* TODO: determine why there's this gap in between `li`s */
 }
 
@@ -420,8 +422,32 @@ Main action toolbar
   flex: 1 auto;
 }
 
-#main .area .actions .selected {
+#main .area .actions .info {
+  padding: 1.75em;
+  vertical-align: middle;
+}
+
+#main .area .actions .info i {
+  margin-right: 1em;
+}
+
+#main .area .actions .controls {
   flex: 10 auto;
+}
+
+#main .area .actions .controls .group {
+  display: inline-block;
+  border-right: 1px solid #555;
+  padding: 1.75em 1.75em 1.75em 0.75em;
+}
+
+#main .area .actions .controls i {
+  /*margin-left: 1em;*/
+  padding-left: 1em;
+}
+
+#main .area .actions .info.notifications {
+  text-align: center;
 }
 
 /*

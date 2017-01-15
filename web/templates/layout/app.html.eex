@@ -82,9 +82,24 @@
           <div class="actions">
             <!-- TODO: flexify this so the middle li can be way larger -->
             <ul>
-              <li class="breadcrumbs">Project > Board</li>
-              <li class="selected">Selected stuff</li>
-              <li class="notifications">Notifications</li>
+              <li class="info breadcrumb">Project > Board</li>
+              <li class="controls">
+                <div class="group">
+                  <i class="fa fa-list-alt" aria-hidden="true"></i>
+                  <i class="fa fa-table" aria-hidden="true"></i>
+                </div>
+                <div class="group">
+                  <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                  <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+                  <i class="fa fa-files-o" aria-hidden="true"></i>
+                  <i class="fa fa-clipboard" aria-hidden="true"></i>
+                  <i class="fa fa-trash-o" aria-hidden="true"></i>
+                  <i class="fa fa-tag" aria-hidden="true"></i>
+                </div>
+              </li>
+              <li class="info notifications">
+                <i class="fa fa-feed" style="color: #9feae1;" aria-hidden="true"></i> No new updates
+              </li>
             </ul>
           </div>
 
@@ -198,11 +213,12 @@
               <select id="levels">
                 <option>Any</option>
                 <option>Epic</option>
-                <option>
+                <option>Story</option>
+                <option>Task</option>
               </select>
 
               <label for="milestone">
-                <i class="fa fa-flag-checkered" aria-hidden="true"></i> Milestone
+                <i class="fa fa-flag-checkered" aria-hidden="true"></i> Milestones
               </label>
               <select id="milestone">
                 <option>Any</option>
@@ -212,7 +228,7 @@
               </select>
 
               <label for="assignee">
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i> Assignee
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i> Assignees
               </label>
               <select id="assignee">
                 <option>Any</option>
