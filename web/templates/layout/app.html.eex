@@ -183,26 +183,6 @@
                 <option>Baz</option>
               </select>
 
-              <label for="assignee">
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i> Assignee
-              </label>
-              <select id="assignee">
-                <option>Any</option>
-                <option>None</option>
-                <option>Bob</option>
-                <option>Darla</option>
-              </select>
-
-              <label for="milestone">
-                <i class="fa fa-flag-checkered" aria-hidden="true"></i> Milestone
-              </label>
-              <select id="milestone">
-                <option>Any</option>
-                <option>None</option>
-                <option>1.15.17</option>
-                <option>2.1.17</option>
-              </select>
-
               <label for="stages">
                 <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Stages
               </label>
@@ -220,6 +200,27 @@
                 <option>Epic</option>
                 <option>
               </select>
+
+              <label for="milestone">
+                <i class="fa fa-flag-checkered" aria-hidden="true"></i> Milestone
+              </label>
+              <select id="milestone">
+                <option>Any</option>
+                <option>None</option>
+                <option>1.15.17</option>
+                <option>2.1.17</option>
+              </select>
+
+              <label for="assignee">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i> Assignee
+              </label>
+              <select id="assignee">
+                <option>Any</option>
+                <option>None</option>
+                <option>Bob</option>
+                <option>Darla</option>
+              </select>
+
               <hr/>
 
               <label for="keywords">

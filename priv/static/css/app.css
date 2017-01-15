@@ -421,7 +421,7 @@ Main action toolbar
 }
 
 #main .area .actions .selected {
-  flex: 8 auto;
+  flex: 10 auto;
 }
 
 /*
