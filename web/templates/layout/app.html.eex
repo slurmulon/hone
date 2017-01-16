@@ -85,17 +85,24 @@
               <li class="info breadcrumb">Project > Board</li>
               <li class="controls">
                 <div class="group">
-                  <i class="fa fa-list-alt" aria-hidden="true"></i>
-                  <i class="fa fa-table" aria-hidden="true"></i>
+                  <a href><i class="fa fa-list-alt" aria-hidden="true"></i></a>
+                  <a href><i class="fa fa-table" aria-hidden="true"></i></a>
                 </div>
                 <div class="group">
-                  <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
-                  <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
-                  <i class="fa fa-files-o" aria-hidden="true"></i>
-                  <i class="fa fa-clipboard" aria-hidden="true"></i>
-                  <i class="fa fa-trash-o" aria-hidden="true"></i>
-                  <i class="fa fa-tag" aria-hidden="true"></i>
-                  <i class="fa fa-download" aria-hidden="true"></i>
+                  <a href><i class="fa fa-undo" aria-hidden="true"></i></a>
+                  <a href><i class="fa fa-repeat" aria-hidden="true"></i></a>
+                </div>
+                <div class="group">
+                  <a href><i class="fa fa-hand-pointer-o" aria-hidden="true"></i></a>
+                  <a href><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></a>
+                  <a href><i class="fa fa-files-o" aria-hidden="true"></i></a>
+                  <a href><i class="fa fa-clipboard" aria-hidden="true"></i></a>
+                  <a href><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                  <a href><i class="fa fa-tag" aria-hidden="true"></i></a>
+                  <a href><i class="fa fa-download" aria-hidden="true"></i></a>
+                </div>
+                <div class="group">
+                  Stickies
                 </div>
               </li>
               <li class="info notifications">
