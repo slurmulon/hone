@@ -71,6 +71,11 @@
                 <i class="fa fa-user" aria-hidden="true"></i>
               </a>
             </li>
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">
+                <i class="fa fa-power-off" aria-hidden="true"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -102,7 +107,7 @@
                   <a href><i class="fa fa-download" aria-hidden="true"></i></a>
                 </div>
                 <div class="group">
-                  Stickies
+                  Bookmarks
                 </div>
               </li>
               <li class="info notifications">
