@@ -360,7 +360,13 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 }
 
 .settings label i {
-  margin-right: 1.0em;
+  float: left;
+  margin: 0.5em 1em;
+}
+
+.settings label span.name {
+  float: right;
+  margin: 0.5em 1em;
 }
 
 .settings select, .settings input[type=text] {
@@ -428,7 +434,7 @@ Main action toolbar
 }
 
 #main .area .actions .info i {
-  margin-right: 1em;
+  margin-right: 1.25em;
 }
 
 #main .area .actions .controls {
@@ -443,7 +449,7 @@ Main action toolbar
 
 #main .area .actions .controls i {
   /*margin-left: 1em;*/
-  padding-left: 1em;
+  padding-left: 1.25em;
 }
 
 #main .area .actions .info.notifications {

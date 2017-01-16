@@ -95,10 +95,11 @@
                   <i class="fa fa-clipboard" aria-hidden="true"></i>
                   <i class="fa fa-trash-o" aria-hidden="true"></i>
                   <i class="fa fa-tag" aria-hidden="true"></i>
+                  <i class="fa fa-download" aria-hidden="true"></i>
                 </div>
               </li>
               <li class="info notifications">
-                <i class="fa fa-feed" style="color: #9feae1;" aria-hidden="true"></i> No new updates
+                <i class="fa fa-feed" style="color: #9feae1;" aria-hidden="true"></i> 2
               </li>
             </ul>
           </div>
@@ -181,7 +182,8 @@
                 </div>
               </div> %>
               <label for="project">
-                <i class="fa fa-building" aria-hidden="true"></i> Project
+                <i class="fa fa-building" aria-hidden="true"></i>
+                <span class="name">Project</span>
               </label>
               <select id="project">
                 <option>Project A</option>
@@ -190,7 +192,8 @@
               </select>
 
               <label for="board">
-                <i class="fa fa-thumb-tack" aria-hidden="true"></i> Board
+                <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                <span class="name">Board</span>
               </label>
               <select id="board">
                 <option>Foo</option>
@@ -199,7 +202,8 @@
               </select>
 
               <label for="stages">
-                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Stages
+                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                <span class="name">Stages</span>
               </label>
               <select id="stages">
                 <option>Any</option>
@@ -208,7 +212,8 @@
               </select>
 
               <label for="levels">
-                <i class="fa fa-cube" aria-hidden="true"></i> Level
+                <i class="fa fa-cube" aria-hidden="true"></i>
+                <span class="name">Level</span>
               </label>
               <select id="levels">
                 <option>Any</option>
@@ -218,7 +223,8 @@
               </select>
 
               <label for="milestone">
-                <i class="fa fa-flag-checkered" aria-hidden="true"></i> Milestones
+                <i class="fa fa-flag-checkered" aria-hidden="true"></i>
+                <span class="name">Milestones</span>
               </label>
               <select id="milestone">
                 <option>Any</option>
@@ -228,7 +234,8 @@
               </select>
 
               <label for="assignee">
-                <i class="fa fa-user-circle-o" aria-hidden="true"></i> Assignees
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <span class="name">Assignees</span>
               </label>
               <select id="assignee">
                 <option>Any</option>
@@ -240,12 +247,14 @@
               <hr/>
 
               <label for="keywords">
-                <i class="fa fa-key" aria-hidden="true"></i> Keywords
+                <i class="fa fa-key" aria-hidden="true"></i>
+                <span class="name">Keywords</span>
               </label>
               <input id="keywords" type="text" />
 
               <label for="tags">
-                <i class="fa fa-tags" aria-hidden="true"></i> Tags
+                <i class="fa fa-tags" aria-hidden="true"></i>
+                <span class="name">Tags</span>
               </label>
               <input id="tags" type="text" />
             </fieldset>
