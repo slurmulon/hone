@@ -470,11 +470,12 @@ Main action toolbar
 
 #main .area .actions .controls i {
   /*margin-left: 1em;*/
-  padding-left: 1.25em;
+  margin-left: 1.25em;
 }
 
 #main .area .actions .controls a {
   color: #777;  /* dark */
+  margin-right: 0.75em;
 }
 
 #main .area .actions .controls a:hover {
@@ -621,7 +622,9 @@ Main board
 .board .stage .unit .badges .badge {
   display: inline-block;
   content: "Badge";
-  background: #565695;
+  /*background: #565695;*/ /* dark */
+  background: #9999c9; /* light */
+  color: #fff; /* light */
   border: 1px solid black;
   border-radius: 5px;
   padding: 0.25em 0.5em;
