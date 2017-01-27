@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/lib/grids-responsive-min.css") %>">
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link href="https://fonts.googleapis.com/css?family=Exo|Nunito" rel="stylesheet">
-    <script src="<%= static_path(@conn, "/js/app.js") %>" async defer></script>
+    <script src="<%= static_path(@conn, "/js/app.bundle.js") %>" async defer></script>
   </head>
 
   <body>
@@ -36,16 +36,17 @@
                 <i class="fa fa-cubes" aria-hidden="true"></i> <!-- aka Layers -->
               </a>
             </li>
-            <li class="pure-menu-item">
-              <a href="#" class="pure-menu-link">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </a>
-            </li>
             <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
               <a href="#" class="pure-menu-link">
                 <i class="fa fa-tags" aria-hidden="true"></i>
               </a>
             </li>
+            <li class="pure-menu-item">
+              <a href="#" class="pure-menu-link">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
+            </li>
+
             <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
               <a href="#" class="pure-menu-link">
                 <i class="fa fa-comments-o" aria-hidden="true"></i>
@@ -92,6 +93,8 @@
                 <div class="group">
                   <a href><i class="fa fa-list-alt" aria-hidden="true"></i></a>
                   <a href><i class="fa fa-table" aria-hidden="true"></i></a>
+                  <a href><i class="fa fa-sun-o" aria-hidden="true"></i></a>
+                  <a href><i class="fa fa-moon-o" aria-hidden="true"></i></a>
                 </div>
                 <div class="group">
                   <a href><i class="fa fa-undo" aria-hidden="true"></i></a>
@@ -100,14 +103,14 @@
                 <div class="group">
                   <a href><i class="fa fa-hand-pointer-o" aria-hidden="true"></i></a>
                   <a href><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></a>
-                  <a href><i class="fa fa-files-o" aria-hidden="true"></i></a>
+                  <a href><i class="fa fa-clone" aria-hidden="true"></i></a>
                   <a href><i class="fa fa-clipboard" aria-hidden="true"></i></a>
                   <a href><i class="fa fa-trash-o" aria-hidden="true"></i></a>
                   <a href><i class="fa fa-tag" aria-hidden="true"></i></a>
                   <a href><i class="fa fa-download" aria-hidden="true"></i></a>
                 </div>
                 <div class="group">
-                  Bookmarks
+                  <i class="fa fa-star" aria-hidden="true"></i> &nbsp; &nbsp; Bookmarks
                 </div>
               </li>
               <li class="info notifications">
