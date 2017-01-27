@@ -398,8 +398,8 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 .settings hr {
   border: 0;
   height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   margin-top: 2.5em;
 }
 
@@ -516,8 +516,8 @@ Main board
 
 .board .stage:hover {
   /*background: #3d3d3d;*/ /* dark */
-  background: #e5e5e5;
-  /*background: #c9c9c9;*/
+  /*background: #e5e5e5;*/ /* light */
+  background: #d8d8d8;
 }
 
 .board .stage .label {
