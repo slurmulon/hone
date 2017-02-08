@@ -1,9 +1,9 @@
 # App artifacts
-/_build
-/db
-/deps
-/*.ez
-/node_modules
+_build
+db
+deps
+*.ez
+node_modules
 
 # Generate on crash by the VM
 erl_crash.dump
