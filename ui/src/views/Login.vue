@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     submit () {
-      const login = { this.username, this.password }
+      // const login = { this.username, this.password }
     }
   }
 }

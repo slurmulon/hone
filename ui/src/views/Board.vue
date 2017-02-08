@@ -197,13 +197,13 @@
 
 <script>
 export default {
-  data {
+  data: {
     stages: ['Review', 'Backlog', 'Developing', 'Dev Complete', 'PR Open', 'Merged', 'Testing', 'Closed']
   },
   methods: {
     randomTicketNumber () {
       return Math.random() * 250
-    }
+    },
 
     randomUnits () {
       return Math.random() * 10

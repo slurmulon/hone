@@ -16,7 +16,7 @@ export default new Router({
     {
       path: '/login',
       component: Login
-    },
+    }
     // {
     //   path: '/project/:id',
     //   component: Project
@@ -27,3 +27,4 @@ export default new Router({
     // }
   ]
 })
+

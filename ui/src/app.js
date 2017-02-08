@@ -4,7 +4,7 @@ import App from './components/App'
 import http from './http'
 import router from './router'
 import store from './store'
-// TODO: import '../web/static/stylus/app.styl'
+import './styles'
 
 sync(store, router)
 
@@ -16,3 +16,4 @@ const app = new Vue({
 })
 
 export { app, router, store }
+
