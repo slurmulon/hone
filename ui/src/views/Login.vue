@@ -1,4 +1,7 @@
 <template>
+  <!-- TODO: show "redirect url" -->
+  <!-- TODO: remember me -->
+  <!-- TODO: keep me logged in -->
   <div class="page">
     <h2>Login</h2>
     <input v-model="username" placeholder="Username" />

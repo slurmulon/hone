@@ -101,7 +101,7 @@ Add transition to containers so they can push in and out.
 /*
 This is the parent `<div>` that contains the menu and the content area.
 */
-#layout {
+/*#layout {
   position: relative;
   left: 0;
   padding-left: 0;
@@ -115,6 +115,14 @@ This is the parent `<div>` that contains the menu and the content area.
 
 #layout.active .menu-link {
   left: 150px;
+}
+*/
+/*
+Pre-application pages, such as the home and login / sign up
+*/
+.page {
+  /*padding: 2em;*/
+  width: 100%;
 }
 
 /*
@@ -161,12 +169,12 @@ appears on the left side of the page.
 */
 
 #menu {
-  margin-left: -150px; /* "#menu" width */
+  /*margin-left: -150px;*/ /* FIXME: break out */
   width: 150px;
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
+  /*bottom: 0;*/ /* FIXME: break out */
   z-index: 1000; /* so the menu or its navicon stays above all content */
   /*background: #191818;*/ /* dark theme */
   background: #fff;
@@ -220,7 +228,8 @@ This styles the selected menu item `<li>`.
   /*background: #96C161;*/
   /*background: #D46A6A;*/
   /*background: #6C4E90;*/
-  background: #565695;
+  /*background: #565695;*/ /* light purple */
+  background: #686884; /* dark purple */
 }
 /*
 This styles a link within a selected menu item `<li>`.
@@ -298,7 +307,7 @@ small screens.
 /*
 Hides the menu at `48em`, but modify this based on your app's needs.
 */
-@media (min-width: 48em) {
+/*@media (min-width: 48em) {
   .header,
   .content {
     padding-left: 2em;
@@ -306,7 +315,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   }
 
   #layout {
-    padding-left: 150px; /* left col width "#menu" */
+    padding-left: 150px;
     left: 0;
   }
 
@@ -323,7 +332,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   #layout.active .menu-link {
     left: 150px;
   }
-}
+}*/
 
 #main {
   display: flex;
