@@ -145,8 +145,6 @@
 // import Counter from '../components/Counter'
 // import Layout from '../components/Layout'
 
-// console.log('HAI', Layout)
-
 export default {
   components: {
     // Counter
@@ -193,12 +191,18 @@ p {
 #layout {
   padding-left: 0; /* left col width "#menu" */
   left: 0;
+  background: #261E25;
 }
 
 #menu {
-  /*width: 100%;*/
   left: 0;
   margin-left: 0;
+  background: none !important;
+}
+
+#menu .logo {
+  float: left;
+  margin-right: 0;
 }
 
 .menu-link {

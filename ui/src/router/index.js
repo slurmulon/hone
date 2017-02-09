@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '../views/Home'
 import Login from '../views/Login'
 // import SignUp from '../views/SignUp'
+import HomeMenu from '../components/home/Menu'
 
 Vue.use(Router)
 
@@ -15,9 +16,7 @@ export default new Router({
       // component: Home
       components: {
         default: Home,
-        menu: {
-          template: 'HI MOM'
-        }
+        menu: HomeMenu
       }
     },
     {

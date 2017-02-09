@@ -6,7 +6,6 @@
           <a class="pure-menu-heading" href="#">hone</a>
         </div>
 
-        <!-- <slot name="menu"></slot> -->
         <router-view name="menu"></router-view>
       </div>
     </header>
@@ -18,7 +17,6 @@
     </main>
 
     <footer>
-      <!-- <slot name="footer"></slot> -->
       <router-view name="footer"></router-view>
     </footer>
   </div>

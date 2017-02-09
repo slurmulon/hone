@@ -81,9 +81,10 @@ Inputs
   height: auto;
 }
 
-#layout, #main, .board, .stage {
+/* FIXME: break out into Board.vue */
+/*#layout, #main, .board, .stage {
   height: 100%;
-}
+}*/
 
 /*
 Add transition to containers so they can push in and out.
@@ -192,11 +193,6 @@ All anchors inside the menu should be styled like this.
 */
 #menu a {
   color: #999;
-  border: none;
-  /*padding: 0.6em 0 0.6em 0.6em;*/
-  padding: 0.8em 1em 0.8em 0;
-  font-size: 1.5em;
-  text-align: right;
 }
 
 /*
@@ -235,6 +231,10 @@ This styles the selected menu item `<li>`.
   /*background: #6C4E90;*/
   /*background: #565695;*/ /* light purple */
   background: #686884; /* dark purple */
+  border: none;
+  padding: 0.8em 1em 0.8em 0;
+  font-size: 1.5em;
+  text-align: right;
 }
 /*
 This styles a link within a selected menu item `<li>`.
