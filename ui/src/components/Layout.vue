@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div id="layout">
     <header>
       <div id="menu">
@@ -6,20 +6,26 @@
           <a class="pure-menu-heading" href="#">hone</a>
         </div>
 
-        <!-- <slot name="menu"></slot> -->
-        <router-view name="menu"></router-view>
+        <slot name="menu">FALLBACK MENU</slot>
       </div>
     </header>
 
     <main>
       <div id="main">
-        <router-view></router-view>
+        <slot name="main">FALLBACK MAIN</slot>
       </div>
     </main>
 
     <footer>
-      <!-- <slot name="footer"></slot> -->
-      <router-view name="footer"></router-view>
+      <slot name="footer">FALLBACK FOOTER</slot>
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'layout'
+}
+</script>
+ -->
+ 

@@ -12,7 +12,13 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      // component: Home
+      components: {
+        default: Home,
+        menu: {
+          template: 'HI MOM'
+        }
+      }
     },
     {
       path: '/login',
