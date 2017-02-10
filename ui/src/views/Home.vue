@@ -97,7 +97,7 @@
       </div> <!-- end pricing-tables -->
 
       <div class="information pure-g">
-        <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-down">
           <div class="main-box">
             <h3 class="information-head">Get started today</h3>
             <p>
@@ -106,7 +106,7 @@
           </div>
         </div>
 
-        <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-down">
           <div class="main-box">
             <h3 class="information-head">Pay monthly or annually</h3>
             <p>
@@ -116,7 +116,7 @@
           </div>
         </div>
 
-        <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-up">
           <div class="main-box">
             <h3 class="information-head">24/7 customer support</h3>
             <p>
@@ -125,7 +125,7 @@
           </div>
         </div>
 
-        <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-up">
           <div class="main-box">
             <h3 class="information-head">Cancel your plan anytime</h3>
             <p>
