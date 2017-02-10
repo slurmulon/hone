@@ -1,7 +1,40 @@
 <template>
   <div class="home-menu">
-    <a class="pure-button">Login</a>
+    <ul class="home-nav">
+      <li>
+        <a href="#">
+          <i class="fa fa-cogs"></i>
+          Install
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/slurmulon/hone">
+          <i class="fa fa-github"></i>
+          Source
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-question"></i>
+          About
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-phone"></i>
+          Contact
+        </a>
+      </li>
+    </ul> 
+    <!-- <a class="pure-button">Login</a>
+    <a class="pure-button">Register</a> -->
+    <router-link
+        to="login"
+        class="pure-button">
+      Login
+    </router-link>
     <a class="pure-button">Register</a>
+    <!-- <router-link to="signup">Register</router-link> -->
   </div>
 </template>
 
@@ -12,12 +45,32 @@ export default {
 </script>
 
 <style>
-.home-nav {
+ul.home-nav {
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* FIXME: make #menu fixed instead, much easier to position the home-nav with this;
+ul.home-nav li {
+  padding-right: 1.5em;
+}
+
+ul.home-nav li i {
+  margin-right: 0.5em;
+}
+
+ul.home-nav li a {
+  text-decoration: none;
+}
+
+ul.home-nav li a:hover {
+  transition: color 0.5s ease;
+  color: white !important;
+}
+
 .home-menu {
-  position: fixed;
+  position: absolute;
   right: 0;
 }
 
@@ -26,6 +79,13 @@ export default {
   padding: .75em 1em;
   margin: 1em 1em 1em 0;
   font-size: 1em;
-  background: none;
+  background: none; 
+}
+
+.home-menu .pure-button:hover {
+  /*-webkit-filter: blur(1px); 
+  -moz-filter: blur(1px); 
+  filter: blur(1px);*/
+  transition: all 0.5s ease;
 }
 </style>
