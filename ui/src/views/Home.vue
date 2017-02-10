@@ -10,9 +10,9 @@
       <!-- zoom-in-out -->
       <div class="intro pure-group"> 
         <h2 data-aos="zoom-out-up" data-aos-duration="4000">We believe in freedom</h2>
-        <p data-aos="zoom-out-up" data-aos-duration="4000">And we are fed up with the arbitrary limitations of other tools that only inhibit our productivity</p>
-        <p data-aos="zoom-out-up" data-aos-duration="4000">That is why we designed Hone to be the most flexible project management system <b>in the world</b></p>
-        <ul data-aos="zoom-out-up" data-aos-duration="4000">
+        <p data-aos="fade-right" data-aos-duration="4000">And we are fed up with the arbitrary limitations of other tools that only inhibit our productivity</p>
+        <p data-aos="fade-left" data-aos-duration="4000">That is why we designed Hone to be the most flexible project management system <b>in the world</b></p>
+        <ul data-aos="zoom-in" data-aos-duration="4000">
           <li>Each unit of work can have an <b>unlimited</b> number of parent and child units</li>
           <li>Easily configure customizable schemas to reflect your business' workflow</li>
           <li>Fork and host your own instance with zero restrictions for <b>FREE</b></li>
@@ -270,7 +270,7 @@ main, #main {
   text-align: center;
   font-size: 1.5em;
   /*padding-top: 2.5em;*/
-  padding-bottom: 5em;
+  /*padding-bottom: 5em;*/
 }
 
 .intro > * {
@@ -282,11 +282,12 @@ main, #main {
 .information,
 .intro {
   max-width: 980px;
-  margin: 0 auto;
+  margin: 8em auto;
 }
 
 .pricing-tables {
-  margin-bottom: 3.125em;
+  /*margin-bottom: 3.125em;*/
+  margin-bottom: 5em;
   text-align: center;
 }
 
@@ -298,6 +299,7 @@ main, #main {
   border: 1px solid #ddd;
   margin: 0 0.5em 2em;
   padding: 0 0 3em;
+  background: #f7f7f7;
 }
 
 /*
