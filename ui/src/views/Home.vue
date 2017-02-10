@@ -6,7 +6,7 @@
       </h1>
     </div>
 
-    <div class="main-content" data-aos="fade-down">
+    <div class="main-content" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
       <div class="intro pure-group">
         <h2>We believe in freedom</h2>
         <p>And we are fed up with the arbitrary limitations of other tools that only inhibit our productivity</p>
@@ -14,7 +14,7 @@
         <ul>
           <li>Each unit of work can have an <b>unlimited</b> number of parent and child units</li>
           <li>Easily configure customizable schemas to reflect your business' workflow</li>
-          <li>Self host your own instance for <b>FREE</b></li>
+          <li>Self host your own instance with zero restrictions for <b>FREE</b></li>
         </ul>
       </div>
       <div class="pricing-tables pure-g">
@@ -147,8 +147,7 @@
 // import Counter from '../components/Counter'
 // import Layout from '../components/Layout'
 import AOS from 'aos'
-
-console.log('derp aos?', AOS)
+import 'aos/dist/aos.css'
 
 AOS.init({ duration: 2000 })
 
@@ -161,6 +160,15 @@ export default {
 </script>
 
 <style>
+/*[data-aos="flip-up"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[data-aos="flip-up"].aos-animate {
+  opacity: 1;
+}*/
+
 h2, h3 {
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -259,11 +267,13 @@ p {
 .intro {
   text-align: center;
   font-size: 1.5em;
+  padding-top: 2.5em;
+  padding-bottom: 5em;
 }
 
 .intro > * {
-  margin-top: 4em;
-  margin-bottom: 4em;
+  margin-top: 6em;
+  margin-bottom: 6em;
 }
 
 .pricing-tables,
