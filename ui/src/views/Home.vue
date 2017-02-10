@@ -6,8 +6,8 @@
       </h1>
     </div>
 
-    <div class="main-content" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
-      <div class="intro pure-group">
+    <div class="main-content">
+      <div class="intro pure-group" data-aos="zoom-in-up" data-aos-duration="4000">
         <h2>We believe in freedom</h2>
         <p>And we are fed up with the arbitrary limitations of other tools that only inhibit our productivity</p>
         <p>That is why we designed Hone to be the most flexible project management system <b>in the world</b></p>
@@ -17,7 +17,8 @@
           <li>Self host your own instance with zero restrictions for <b>FREE</b></li>
         </ul>
       </div>
-      <div class="pricing-tables pure-g">
+
+      <div class="pricing-tables pure-g" data-aos="flip-right" data-aos-duration="2000">
         <div class="pure-u-1 pure-u-md-1-3">
           <div class="pricing-table pricing-table-free">
             <div class="pricing-table-header">
@@ -160,14 +161,6 @@ export default {
 </script>
 
 <style>
-/*[data-aos="flip-up"] {
-  opacity: 0;
-  transition-property: opacity;
-}
-
-[data-aos="flip-up"].aos-animate {
-  opacity: 1;
-}*/
 
 h2, h3 {
   letter-spacing: 0.25em;
