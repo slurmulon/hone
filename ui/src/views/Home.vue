@@ -6,14 +6,15 @@
       </h1>
     </div>
 
-    <div class="main-content">
+    <div class="main-content" data-aos="fade-down">
       <div class="intro pure-group">
-        <p>Here at MadHax, we believe in freedom.</p>
-        <p>That's why we designed hone to be the most flexible project management system in the world:</p>
+        <h2>We believe in freedom</h2>
+        <p>And we are fed up with the arbitrary limitations of other tools that only inhibit our productivity</p>
+        <p>That is why we designed Hone to be the most flexible project management system <b>in the world</b></p>
         <ul>
-          <li>Each unit of work can have an unlimited number of parent and child units</li>
+          <li>Each unit of work can have an <b>unlimited</b> number of parent and child units</li>
           <li>Easily configure customizable schemas to reflect your business' workflow</li>
-          <li>Self host your own instance for free</li>
+          <li>Self host your own instance for <b>FREE</b></li>
         </ul>
       </div>
       <div class="pricing-tables pure-g">
@@ -31,8 +32,10 @@
               <li>Free setup</li>
               <li>Custom sub-domain</li>
               <li>Standard customer support</li>
-              <li>1GB file storage</li>
-              <li>1 database</li>
+              <li>3 projects</li>
+              <li>1 board for each project</li>
+              <li>5 users</li>
+              <li>Regular backups</li>
               <li>Unlimited bandwidth</li>
             </ul>
 
@@ -46,7 +49,7 @@
               <h2>Small Business</h2>
 
               <span class="pricing-table-price">
-                $25 <span>per month</span>
+                $50 <span>per month</span>
               </span>
             </div>
 
@@ -54,8 +57,10 @@
               <li>Free setup</li>
               <li>Use your own domain</li>
               <li>Standard customer support</li>
-              <li>10GB file storage</li>
-              <li>5 databases</li>
+              <li>10 projects</li>
+              <li>5 board under each project</li>
+              <li>25 users</li>
+              <li>Regular backups</li>
               <li>Unlimited bandwidth</li>
             </ul>
 
@@ -77,8 +82,10 @@
               <li>Free setup</li>
               <li>Use your own domain</li>
               <li>Premium customer support</li>
-              <li>Unlimited file storage</li>
-              <li>25 databases</li>
+              <li>Unlimited projects</li>
+              <li>Unlimited boards</li>
+              <li>Unlimited users</li>
+              <li>Regular backups</li>
               <li>Unlimited bandwidth</li>
             </ul>
 
@@ -139,6 +146,11 @@
 <script>
 // import Counter from '../components/Counter'
 // import Layout from '../components/Layout'
+import AOS from 'aos'
+
+console.log('derp aos?', AOS)
+
+AOS.init({ duration: 2000 })
 
 export default {
   components: {
@@ -249,6 +261,11 @@ p {
   font-size: 1.5em;
 }
 
+.intro > * {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
 .pricing-tables,
 .information,
 .intro {
@@ -276,11 +293,17 @@ p {
  * Choose a different color based on the type of pricing table.
  */
 .pricing-table-free .pricing-table-header {
-  background: #519251;
+  /*background: #519251;*/
+  background: #a4c8dd;
 }
 
 .pricing-table-biz .pricing-table-header {
-  background: #2c4985;
+  /*background: #2c4985;*/
+  background: #5a839b;
+}
+
+.pricing-table-enterprise .pricing-table-header {
+  background: #456272;
 }
 
 /*
