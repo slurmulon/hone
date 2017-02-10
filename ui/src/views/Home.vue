@@ -7,14 +7,15 @@
     </div>
 
     <div class="main-content">
-      <div class="intro pure-group" data-aos="zoom-in-up" data-aos-duration="4000">
-        <h2>We believe in freedom</h2>
-        <p>And we are fed up with the arbitrary limitations of other tools that only inhibit our productivity</p>
-        <p>That is why we designed Hone to be the most flexible project management system <b>in the world</b></p>
-        <ul>
+      <!-- zoom-in-out -->
+      <div class="intro pure-group"> 
+        <h2 data-aos="zoom-out-up" data-aos-duration="4000">We believe in freedom</h2>
+        <p data-aos="zoom-out-up" data-aos-duration="4000">And we are fed up with the arbitrary limitations of other tools that only inhibit our productivity</p>
+        <p data-aos="zoom-out-up" data-aos-duration="4000">That is why we designed Hone to be the most flexible project management system <b>in the world</b></p>
+        <ul data-aos="zoom-out-up" data-aos-duration="4000">
           <li>Each unit of work can have an <b>unlimited</b> number of parent and child units</li>
           <li>Easily configure customizable schemas to reflect your business' workflow</li>
-          <li>Self host your own instance with zero restrictions for <b>FREE</b></li>
+          <li>Fork and host your own instance with zero restrictions for <b>FREE</b></li>
         </ul>
       </div>
 
@@ -33,9 +34,9 @@
               <li>Free setup</li>
               <li>Custom sub-domain</li>
               <li>Standard customer support</li>
-              <li>3 projects</li>
+              <li>5 projects</li>
               <li>1 board for each project</li>
-              <li>5 users</li>
+              <li>10 users</li>
               <li>Regular backups</li>
               <li>Unlimited bandwidth</li>
             </ul>
@@ -58,9 +59,9 @@
               <li>Free setup</li>
               <li>Use your own domain</li>
               <li>Standard customer support</li>
-              <li>10 projects</li>
-              <li>5 board under each project</li>
-              <li>25 users</li>
+              <li>20 projects</li>
+              <li>5 boards under each project</li>
+              <li>50 users</li>
               <li>Regular backups</li>
               <li>Unlimited bandwidth</li>
             </ul>
@@ -161,6 +162,9 @@ export default {
 </script>
 
 <style>
+body {
+  background: #261E25 !important;
+}
 
 h2, h3 {
   letter-spacing: 0.25em;
@@ -200,6 +204,7 @@ p {
   padding-left: 0; /* left col width "#menu" */
   left: 0;
   background: #261E25;
+  height: 100%;
 }
 
 #menu {
@@ -220,6 +225,10 @@ p {
 
 #layout.active .menu-link {
   left: 0;
+}
+
+main, #main {
+  height: 100%;
 }
 
 /*
@@ -260,7 +269,7 @@ p {
 .intro {
   text-align: center;
   font-size: 1.5em;
-  padding-top: 2.5em;
+  /*padding-top: 2.5em;*/
   padding-bottom: 5em;
 }
 
@@ -382,7 +391,7 @@ p {
 }
 
 .information-head {
-  color: black;
+  color: white;
   font-weight: 500;
 }
 
@@ -416,8 +425,10 @@ p {
  */
 @media (min-width: 480px) {
   .banner {
-    /*height: 800px;*/
-    height: 50%;
+    /* FIXME: use calc; */
+    /* height: 800px; */
+    /* height: 50%; */
+    height: 100%;
   }
   .banner-head {
     font-size: 3em;
