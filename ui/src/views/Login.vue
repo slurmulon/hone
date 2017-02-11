@@ -2,10 +2,12 @@
   <!-- TODO: show "redirect url" -->
   <!-- TODO: remember me -->
   <!-- TODO: keep me logged in -->
-  <div class="page">
-    <h2>Login</h2>
-    <input v-model="username" placeholder="Username" />
-    <input v-model="password" placeholder="Password" />
+  <div id="main" class="login">
+    <div class="page">
+      <h2>Login</h2>
+      <input v-model="username" placeholder="Username" />
+      <input v-model="password" placeholder="Password" />
+    </div>
   </div>
 </template>
 
@@ -22,3 +24,9 @@ export default {
   }
 }
 </script>
+
+<style>
+#main.login {
+  align-items: center  
+}
+</style>

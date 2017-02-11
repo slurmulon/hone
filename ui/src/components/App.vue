@@ -11,9 +11,7 @@
     </header>
 
     <main>
-      <div id="main">
-        <router-view></router-view>
-      </div>
+      <router-view></router-view>
     </main>
 
     <footer>

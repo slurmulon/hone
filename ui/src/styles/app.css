@@ -171,7 +171,7 @@ appears on the left side of the page.
 
 #menu {
   /*margin-left: -150px;*/ /* FIXME: break out */
-  /*width: 150px;*/ /* FIXME: break out */;
+  /*width: 150px;*/ /* FIXME: break out */
   width: 100%;
   position: fixed;
   top: 0;

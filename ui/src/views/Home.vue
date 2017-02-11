@@ -1,146 +1,191 @@
 <template>
-  <div class="page">
-    <div class="banner">
-      <h1 class="banner-head">
-        Limitless project management is finally here
-      </h1>
-    </div>
-
-    <div class="main-content">
-      <!-- zoom-in-out -->
-      <div class="intro pure-group"> 
-        <h2 data-aos="zoom-out-up" data-aos-duration="4000">We believe in freedom</h2>
-        <p data-aos="fade-right" data-aos-duration="4000">And we are fed up with the arbitrary limitations of other tools that only inhibit our productivity</p>
-        <p data-aos="fade-left" data-aos-duration="4000">That is why we designed Hone to be the most flexible project management system <b>in the world</b></p>
-        <ul data-aos="zoom-in" data-aos-duration="4000">
-          <li>Each unit of work can have an <b>unlimited</b> number of parent and child units</li>
-          <li>Easily configure customizable schemas to reflect your business' workflow</li>
-          <li>Fork and host your own instance with zero restrictions for <b>FREE</b></li>
-        </ul>
+  <div id="main" class="home">
+    <div class="page">
+      <div class="banner">
+        <h1 class="banner-head">
+          Limitless project management is finally here
+        </h1>
       </div>
 
-      <div class="pricing-tables pure-g" data-aos="flip-right" data-aos-duration="2000">
-        <div class="pure-u-1 pure-u-md-1-3">
-          <div class="pricing-table pricing-table-free">
-            <div class="pricing-table-header">
-              <h2>Personal</h2>
-
-              <span class="pricing-table-price">
-                $7 <span>per month</span>
-              </span>
+      <div class="main-content">
+        <!-- zoom-in-out -->
+        <div class="intro pure-group"> 
+          <h2 data-aos="zoom-out-up" data-aos-duration="4000">We believe in freedom</h2>
+          <p data-aos="fade-right" data-aos-duration="4000">And we are fed up with the arbitrary limitations of other tools that only inhibit our productivity</p>
+          <p data-aos="fade-left" data-aos-duration="4000">That is why we designed Hone to be the most flexible project management system <b>in the world</b></p>
+          <!-- <ul data-aos="zoom-in" data-aos-duration="4000">
+            <li>Units of work can have an <b>unlimited</b> number of parent and child units</li>
+            <li>Easily configure schemas to reflect your business' workflow</li>
+            <li>Fork and host your own instance with zero restrictions for <b>FREE</b></li>
+          </ul> -->
+          <div class="information pure-g">
+            <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-down">
+              <div class="main-box">
+                <h3 class="information-head">Infinite units</h3>
+                <p>
+                  Units of work can have an <b>unlimited</b> number of parent and child units
+                </p>
+              </div>
             </div>
 
-            <ul class="pricing-table-list">
-              <li>Free setup</li>
-              <li>Custom sub-domain</li>
-              <li>Standard customer support</li>
-              <li>5 projects</li>
-              <li>1 board for each project</li>
-              <li>10 users</li>
-              <li>Regular backups</li>
-              <li>Unlimited bandwidth</li>
-            </ul>
-
-            <button class="button-choose pure-button">Choose</button>
-          </div>
-        </div>
-
-        <div class="pure-u-1 pure-u-md-1-3">
-          <div class="pricing-table pricing-table-biz pricing-table-selected">
-            <div class="pricing-table-header">
-              <h2>Small Business</h2>
-
-              <span class="pricing-table-price">
-                $50 <span>per month</span>
-              </span>
+            <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-down">
+              <div class="main-box">
+                <h3 class="information-head">
+                  Board Schemas
+                </h3>
+                <p>
+                  Easily configure board schemas to reflect your business' workflow
+                </p>
+              </div>
             </div>
 
-            <ul class="pricing-table-list">
-              <li>Free setup</li>
-              <li>Use your own domain</li>
-              <li>Standard customer support</li>
-              <li>20 projects</li>
-              <li>5 boards under each project</li>
-              <li>50 users</li>
-              <li>Regular backups</li>
-              <li>Unlimited bandwidth</li>
-            </ul>
-
-            <button class="button-choose pure-button">Choose</button>
-          </div>
-        </div>
-
-        <div class="pure-u-1 pure-u-md-1-3">
-          <div class="pricing-table pricing-table-enterprise">
-            <div class="pricing-table-header">
-              <h2>Enterprise</h2>
-
-              <span class="pricing-table-price">
-                $250 <span>per month</span>
-              </span>
+            <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-up">
+              <div class="main-box">
+                <h3 class="information-head">
+                  Open Source
+                </h3>
+                <p>
+                  Fork and host your own instance with zero restrictions for <b>FREE</b>
+                </p>
+              </div>
             </div>
 
-            <ul class="pricing-table-list">
-              <li>Free setup</li>
-              <li>Use your own domain</li>
-              <li>Premium customer support</li>
-              <li>Unlimited projects</li>
-              <li>Unlimited boards</li>
-              <li>Unlimited users</li>
-              <li>Regular backups</li>
-              <li>Unlimited bandwidth</li>
-            </ul>
-
-            <button class="button-choose pure-button">Choose</button>
-          </div>
-        </div>
-      </div> <!-- end pricing-tables -->
-
-      <div class="information pure-g">
-        <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-down">
-          <div class="main-box">
-            <h3 class="information-head">Get started today</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-            </p>
-          </div>
+            <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-up">
+              <div class="main-box">
+                <h3 class="information-head">
+                  Migration Friendly
+                </h3>
+                <p>
+                  Modify entire boards of information or subsets of them with ease
+                </p>
+              </div>
+            </div>
+          </div> <!-- end information -->
         </div>
 
-        <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-down">
-          <div class="main-box">
-            <h3 class="information-head">Pay monthly or annually</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
-            </p>
-          </div>
-        </div>
+        <div class="pricing-tables pure-g" data-aos="flip-right" data-aos-duration="2000">
+          <div class="pure-u-1 pure-u-md-1-3">
+            <div class="pricing-table pricing-table-free">
+              <div class="pricing-table-header">
+                <h2>Personal</h2>
 
-        <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-up">
-          <div class="main-box">
-            <h3 class="information-head">24/7 customer support</h3>
-            <p>
-              Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
+                <span class="pricing-table-price">
+                  $7 <span>per month</span>
+                </span>
+              </div>
 
-        <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-up">
-          <div class="main-box">
-            <h3 class="information-head">Cancel your plan anytime</h3>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate vtelit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-      </div> <!-- end information -->
-    </div> <!-- end main-content -->
+              <ul class="pricing-table-list">
+                <li>Free setup</li>
+                <li>Custom sub-domain</li>
+                <li>Standard customer support</li>
+                <li>5 projects</li>
+                <li>1 board for each project</li>
+                <li>10 users</li>
+                <li>Regular backups</li>
+                <li>Unlimited bandwidth</li>
+              </ul>
 
-    <div class="footer main-box">
-      <p>
-        <a href="#">Try now</a> for 14 days. No credit card required. Header image courtesy of <a href='http://unsplash.com/'>Unsplash</a>.
-      </p>
+              <button class="button-choose pure-button">Choose</button>
+            </div>
+          </div>
+
+          <div class="pure-u-1 pure-u-md-1-3">
+            <div class="pricing-table pricing-table-biz pricing-table-selected">
+              <div class="pricing-table-header">
+                <h2>Small Business</h2>
+
+                <span class="pricing-table-price">
+                  $50 <span>per month</span>
+                </span>
+              </div>
+
+              <ul class="pricing-table-list">
+                <li>Free setup</li>
+                <li>Use your own domain</li>
+                <li>Standard customer support</li>
+                <li>20 projects</li>
+                <li>5 boards under each project</li>
+                <li>50 users</li>
+                <li>Regular backups</li>
+                <li>Unlimited bandwidth</li>
+              </ul>
+
+              <button class="button-choose pure-button">Choose</button>
+            </div>
+          </div>
+
+          <div class="pure-u-1 pure-u-md-1-3">
+            <div class="pricing-table pricing-table-enterprise">
+              <div class="pricing-table-header">
+                <h2>Enterprise</h2>
+
+                <span class="pricing-table-price">
+                  $250 <span>per month</span>
+                </span>
+              </div>
+
+              <ul class="pricing-table-list">
+                <li>Free setup</li>
+                <li>Use your own domain</li>
+                <li>Premium customer support</li>
+                <li>Unlimited projects</li>
+                <li>Unlimited boards</li>
+                <li>Unlimited users</li>
+                <li>Regular backups</li>
+                <li>Unlimited bandwidth</li>
+              </ul>
+
+              <button class="button-choose pure-button">Choose</button>
+            </div>
+          </div>
+        </div> <!-- end pricing-tables -->
+
+        <div class="information pure-g">
+          <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-down">
+            <div class="main-box">
+              <h3 class="information-head">Get started today</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+              </p>
+            </div>
+          </div>
+
+          <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-down">
+            <div class="main-box">
+              <h3 class="information-head">Pay monthly or annually</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+              </p>
+            </div>
+          </div>
+
+          <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-up">
+            <div class="main-box">
+              <h3 class="information-head">24/7 customer support</h3>
+              <p>
+                Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-up">
+            <div class="main-box">
+              <h3 class="information-head">Cancel your plan anytime</h3>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate vtelit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div> <!-- end information -->
+      </div> <!-- end main-content -->
+
+      <div class="footer main-box">
+        <p>
+          <a href="#">Try now</a> for 14 days. No credit card required. Header image courtesy of <a href='http://unsplash.com/'>Unsplash</a>.
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -276,6 +321,11 @@ main, #main {
 .intro > * {
   margin-top: 6em;
   margin-bottom: 6em;
+}
+
+.intro .information {
+  font-size: 0.8em;
+  text-align: left;
 }
 
 .pricing-tables,

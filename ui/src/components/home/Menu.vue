@@ -62,10 +62,10 @@ ul.home-nav li i {
 
 ul.home-nav li a {
   text-decoration: none;
+  transition: color 0.5s ease;
 }
 
 ul.home-nav li a:hover {
-  transition: color 0.5s ease;
   color: white !important;
 }
 
