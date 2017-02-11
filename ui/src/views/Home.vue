@@ -11,35 +11,39 @@
         <!-- zoom-in-out -->
         <div class="intro pure-group"> 
           <h2 data-aos="zoom-out-up" data-aos-duration="4000">We believe in freedom</h2>
-          <p data-aos="fade-right" data-aos-duration="4000">And we are fed up with the arbitrary limitations of other tools that only inhibit our productivity</p>
-          <p data-aos="fade-left" data-aos-duration="4000">That is why we designed Hone to be the most flexible project management system <b>in the world</b></p>
-          <!-- <ul data-aos="zoom-in" data-aos-duration="4000">
-            <li>Units of work can have an <b>unlimited</b> number of parent and child units</li>
-            <li>Easily configure schemas to reflect your business' workflow</li>
-            <li>Fork and host your own instance with zero restrictions for <b>FREE</b></li>
-          </ul> -->
+          <p data-aos="fade-right" 
+             data-aos-duration="4000">
+            And we are fed up with the arbitrary limitations of other tools that only inhibit our productivity
+          </p>
+          <p data-aos="fade-left" 
+             data-aos-duration="4000">
+            That is why we designed Hone to be the most flexible project management system <b>in the world</b>
+          </p>
           <div class="information pure-g">
-            <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-down">
+            <div class="pure-u-1 pure-u-md-1-2"  data-aos="fade-down">
               <div class="main-box">
                 <h3 class="information-head">Infinite units</h3>
                 <p>
-                  Units of work can have an <b>unlimited</b> number of parent and child units
+                  Units of work can have an <b>unlimited</b> number of parent and child units. This can be extended to Scrum or any development process imaginable!
                 </p>
               </div>
             </div>
 
-            <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-down">
+            <div class="pure-u-1 pure-u-md-1-2" 
+                 data-aos="fade-down"
+                 data-aos-delay="250">
               <div class="main-box">
                 <h3 class="information-head">
                   Board Schemas
                 </h3>
                 <p>
-                  Easily configure board schemas to reflect your business' workflow
+                  Easily configure board schemas to reflect your business' workflow, ensuring your boards stay accurate and organized
                 </p>
               </div>
             </div>
 
-            <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-up">
+            <div class="pure-u-1 pure-u-md-1-2"
+                 data-aos="fade-up">
               <div class="main-box">
                 <h3 class="information-head">
                   Open Source
@@ -50,20 +54,24 @@
               </div>
             </div>
 
-            <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-up">
+            <div class="pure-u-1 pure-u-md-1-2" 
+                 data-aos="fade-up"
+                 data-aos-delay="250">
               <div class="main-box">
                 <h3 class="information-head">
                   Migration Friendly
                 </h3>
                 <p>
-                  Modify entire boards of information or subsets of them with ease
+                  Modify entire boards of information or subsets of them with ease. Moving a parent unit in a board also moves over all of its children
                 </p>
               </div>
             </div>
-          </div> <!-- end information -->
+          </div>
         </div>
 
-        <div class="pricing-tables pure-g" data-aos="flip-right" data-aos-duration="2000">
+        <div class="pricing-tables pure-g"
+             data-aos="flip-right"
+             data-aos-duration="2000">
           <div class="pure-u-1 pure-u-md-1-3">
             <div class="pricing-table pricing-table-free">
               <div class="pricing-table-header">
@@ -141,7 +149,8 @@
         </div> <!-- end pricing-tables -->
 
         <div class="information pure-g">
-          <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-down">
+          <div class="pure-u-1 pure-u-md-1-2" 
+               data-aos="fade-right">
             <div class="main-box">
               <h3 class="information-head">Get started today</h3>
               <p>
@@ -150,7 +159,8 @@
             </div>
           </div>
 
-          <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-down">
+          <div class="pure-u-1 pure-u-md-1-2" 
+               data-aos="fade-left">
             <div class="main-box">
               <h3 class="information-head">Pay monthly or annually</h3>
               <p>
@@ -160,7 +170,8 @@
             </div>
           </div>
 
-          <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-up">
+          <div class="pure-u-1 pure-u-md-1-2" 
+               data-aos="fade-right">
             <div class="main-box">
               <h3 class="information-head">24/7 customer support</h3>
               <p>
@@ -169,7 +180,8 @@
             </div>
           </div>
 
-          <div class="pure-u-1 pure-u-md-1-2" data-aos="fade-up">
+          <div class="pure-u-1 pure-u-md-1-2" 
+               data-aos="fade-left">
             <div class="main-box">
               <h3 class="information-head">Cancel your plan anytime</h3>
               <p>
@@ -313,7 +325,8 @@ main, #main {
 
 .intro {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 36px;
+  /*font-size: 1.5em;*/
   /*padding-top: 2.5em;*/
   /*padding-bottom: 5em;*/
 }
@@ -324,8 +337,13 @@ main, #main {
 }
 
 .intro .information {
-  font-size: 0.8em;
+  /*font-size: 0.8em;*/
+  font-size: 32px;
   text-align: left;
+}
+
+.information {
+  font-size: 32px;
 }
 
 .pricing-tables,
@@ -443,7 +461,9 @@ main, #main {
 }
 
 .information-head {
-  color: white;
+  /*color: white;*/
+  /*color: #bf9e9e;*/
+  color: #A4C8DD;
   font-weight: 500;
 }
 
@@ -487,3 +507,4 @@ main, #main {
   }
 }
 </style>
+
