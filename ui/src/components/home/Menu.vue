@@ -25,7 +25,7 @@
           Contact
         </a>
       </li>
-    </ul> 
+    </ul>
     <!-- <a class="pure-button">Login</a>
     <a class="pure-button">Register</a> -->
     <router-link
@@ -76,10 +76,11 @@ ul.home-nav li a:hover {
 
 .home-menu .pure-button {
   border: 3px solid #686884;
+  /*border: 3px solid #A4C8DD;*/
   padding: .75em 1em;
   margin: 1em 1em 1em 0;
   font-size: 1em;
-  background: none; 
+  background: none;
 }
 
 .home-menu .pure-button:hover {

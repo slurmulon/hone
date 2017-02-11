@@ -2,7 +2,7 @@
   <div id="main" class="home">
     <div class="page">
       <div class="banner">
-        <h1 class="banner-head">
+        <h1 class="banner-head" data-aos="zoom-in">
           Limitless project management is finally here
         </h1>
       </div>
@@ -10,8 +10,11 @@
       <div class="main-content">
         <!-- zoom-in-out -->
         <div class="intro pure-group"> 
-          <h2 data-aos="zoom-out-up" data-aos-duration="4000">We believe in freedom</h2>
-          <p data-aos="fade-right" 
+          <h2 data-aos="zoom-out-up" 
+              data-aos-duration="4000">
+            We believe in freedom
+          </h2>
+          <p data-aos="fade-right"
              data-aos-duration="4000">
             And we are fed up with the arbitrary limitations of other tools that only inhibit our productivity
           </p>
@@ -23,8 +26,11 @@
             <div class="pure-u-1 pure-u-md-1-2"  data-aos="fade-down">
               <div class="main-box">
                 <h3 class="information-head">Infinite units</h3>
+                <p class="graphic">
+                  <img src="static/sitemap.svg"/>
+                </p>
                 <p>
-                  Units of work can have an <b>unlimited</b> number of parent and child units. This can be extended to Scrum or any development process imaginable!
+                  Units of work can have an <b>unlimited</b> number of parent and child units. This concept can be extended to support Scrum or any development process imaginable!
                 </p>
               </div>
             </div>
@@ -36,8 +42,11 @@
                 <h3 class="information-head">
                   Board Schemas
                 </h3>
+                <p class="graphic">
+                  <img src="static/cube.svg"/>
+                </p>
                 <p>
-                  Easily configure board schemas to reflect your business' workflow, ensuring your boards stay accurate and organized
+                  Easily configure your own board schemas to reflect your business' workflow or choose from our community driven library, ensuring your boards stay accurate and organized.<br/>
                 </p>
               </div>
             </div>
@@ -48,6 +57,9 @@
                 <h3 class="information-head">
                   Open Source
                 </h3>
+                <p class="graphic">
+                  <img src="static/fork.svg"/>
+                </p>
                 <p>
                   Fork and host your own instance with zero restrictions for <b>FREE</b>
                 </p>
@@ -59,8 +71,11 @@
                  data-aos-delay="250">
               <div class="main-box">
                 <h3 class="information-head">
-                  Migration Friendly
+                  Maintainable
                 </h3>
+                <p class="graphic">
+                  <img src="static/ruler.svg"/>
+                </p>
                 <p>
                   Modify entire boards of information or subsets of them with ease. Moving a parent unit in a board also moves over all of its children
                 </p>
@@ -321,6 +336,7 @@ main, #main {
   color: white;
   font-weight: 500;
   text-shadow: 0 1px 1px black;
+  /*text-transform: uppercase;*/
 }
 
 .intro {
@@ -342,8 +358,22 @@ main, #main {
   text-align: left;
 }
 
+.intro .information .graphic {
+  text-align: center;
+}
+
+.intro .information .graphic img {
+  width: 50%;
+  padding-top: 1em;
+}
+
 .information {
   font-size: 32px;
+}
+
+.information .main-box {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .pricing-tables,

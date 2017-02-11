@@ -9,7 +9,7 @@
         <fielset>
           <div class="pure-g">
             <div class="pure-u-1-2">
-              <input 
+              <input
                 type="text"
                 v-model="username"
                 placeholder="Username" />
@@ -60,7 +60,9 @@ export default {
   width: 100%;
   background: transparent;
   box-shadow: none;
-  border: 1px solid #bf9e9e;
+  /*border: 1px solid #bf9e9e;*/
+  border: 1px solid #A4C8DD;
+  border-radius: 0;
   padding: 1.25em;
 }
 
@@ -69,12 +71,21 @@ export default {
   color: white;
   background: transparent;
   /*border: 1px solid #686884;*/
-  border: 1px solid #456272;
+  background: #382c36;
+  /*border: 1px solid #456272;*/
+  border: 1px solid #A4C8DD;
+  border-radius: 0;
   text-transform: uppercase;
   padding: 1.25em;
+  transition: all 0.5s ease;
 }
 
-#main.login .pure-form .pure-u-1-1, 
+#main.login .pure-form button.submit:hover {
+  /*border: 1px solid #A4C8DD;*/
+  border: 1px solid #fff;
+}
+
+#main.login .pure-form .pure-u-1-1,
 #main.login .pure-form .pure-u-1-2 {
   padding: 1em 2em 1em 0;
 }
