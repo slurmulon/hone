@@ -316,7 +316,8 @@ main, #main {
   /*background: url('https://images.unsplash.com/photo-1461782296610-c552d61b149a?dpr=3.5') 0 0 no-repeat fixed;*/
   /*background: url('https://images.unsplash.com/photo-1482957937087-5e83a32478c9?dpr=3.5&auto=format')no-repeat fixed;*/
   /*background: url('https://images.unsplash.com/photo-1446776877081-d282a0f896e2?dpr=3.5') 0 0 no-repeat fixed;*/
-  background: url('https://images.unsplash.com/photo-1444424050109-31f057e1e858?dpr=3.5');
+  /*background: url('https://images.unsplash.com/photo-1444424050109-31f057e1e858?dpr=3.5'); */ /* BEST */
+  background: url('/static/bg-mountains.jpg');
   background-position-y: 50%;
   text-align: center;
   background-size: cover;
