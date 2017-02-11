@@ -24,6 +24,27 @@
 - http://www.phoenixframework.org/docs/ecto-models#section-data-relationship-and-dependencies
 - http://matthewlehner.net/using-webpack-with-phoenix-and-elixir/
 
+# Vue
+
+- http://router.vuejs.org/en/
+- https://vuejs.org/v2/guide/components.html
+- https://vuejs.org/v2/guide/forms.html
+- https://github.com/vuejs-templates/webpack
+- http://vuejs-templates.github.io/webpack/
+- ** https://github.com/aikin/vuejs-seed **
+- https://github.com/prograhammer/example-vue-project
+- https://auth0.com/blog/build-an-app-with-vuejs/
+- https://vuejs.org/v2/guide/components.html#Named-Slots
+- https://vuejs.org/v2/guide/single-file-components.html
+- https://github.com/vuejs/vue/issues/2312
+- https://jsfiddle.net/v2pfj4c4/11/
+- https://router.vuejs.org/en/essentials/named-views.html *
+- https://github.com/vuejs/vue-router/issues/837 * <- latest problem (2/9)
+
+# Scaffolding
+
+- http://www.jianshu.com/p/aa36b7d59734
+
 # Sockets
 
 - https://github.com/chrismccord/phoenix_chat_example
@@ -35,6 +56,14 @@
 # CSS
 
 - http://cssdeck.com/labs/css3-webkit-vertical-scrollbars
+- https://css-tricks.com/aos-css-driven-scroll-animation-library/
+- https://prinzhorn.github.io/skrollr/
+- http://pixelcog.github.io/parallax.js/
+
+# Stylus
+
+- https://gist.github.com/andrewluetgers/927fb8a8651d7a713365
+- https://github.com/vuejs/vue-loader/issues/12
 
 # PostgreSQL
 
@@ -53,4 +82,17 @@
 - https://github.com/kenta-aktsk/media_sample/
 - https://github.com/tiagobarreto/simple-crud-elixir-phoenix-angularjs
 - https://github.com/chrismccord/phoenix_chat_example
+- https://jsfiddle.net/posva/6du90epg/
+- https://coligo.io/markdown-editor-vuejs/
 
+# Books
+
+- https://leanpub.com/vuejs2
+
+# Editors
+
+- https://vectr.com/
+
+# Assets
+
+- https://unsplash.com/
