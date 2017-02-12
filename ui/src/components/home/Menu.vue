@@ -33,8 +33,11 @@
         class="pure-button">
       Login
     </router-link>
-    <a class="pure-button">Register</a>
-    <!-- <router-link to="signup">Register</router-link> -->
+    <router-link 
+        to="register"
+        class="pure-button">
+      Register
+    </router-link>
   </div>
 </template>
 

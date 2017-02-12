@@ -382,7 +382,7 @@ main, #main {
 .information,
 .intro {
   max-width: 980px;
-  margin: 8em auto;
+  margin: 6em auto;
 }
 
 .pricing-tables {

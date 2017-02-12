@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '../views/Home'
 import Login from '../views/Login'
+import Register from '../views/Register'
 // import SignUp from '../views/SignUp'
 import HomeMenu from '../components/home/Menu'
 
@@ -21,7 +22,19 @@ export default new Router({
     },
     {
       path: '/login',
-      component: Login
+      // component: Login
+      components: {
+        default: Login,
+        menu: HomeMenu
+      }
+    },
+    {
+      path: '/register',
+      // component: Register
+      components: {
+        default: Register,
+        menu: HomeMenu
+      }
     }
     // {
     //   path: '/project/:id',
