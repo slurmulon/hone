@@ -24,6 +24,13 @@
               <!-- TODO: make link to portal page -->
               <button class="submit pure-button">Submit</button>
             </div>
+            <div class="pure-u-1-1">
+              <!-- <input id="keep-login" type="checkbox" />
+              <label for="keep-login">
+                Keep me logged in
+              </label> -->
+              <!-- <i class="fa fa-ambulance" aria-hidden="true"></i> -->
+            </div>
           </div>
         </fielset>
       </form>

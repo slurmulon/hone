@@ -2,6 +2,7 @@
   <div id="main" class="home">
     <div class="page">
       <div class="banner">
+        <!-- TODO: switch this to a link to the portal if already logged in -->
         <h1 class="banner-head" data-aos="zoom-in">
           Limitless project management is finally here
         </h1>
@@ -25,7 +26,7 @@
           <div class="information pure-g">
             <div class="pure-u-1 pure-u-md-1-2"  data-aos="fade-down">
               <div class="main-box">
-                <h3 class="information-head">Infinite units</h3>
+                <h3 class="information-head">Hierarchical</h3>
                 <p class="graphic">
                   <img src="static/sitemap.svg"/>
                 </p>
