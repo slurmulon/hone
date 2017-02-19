@@ -40,6 +40,8 @@
 - https://jsfiddle.net/v2pfj4c4/11/
 - https://router.vuejs.org/en/essentials/named-views.html *
 - https://github.com/vuejs/vue-router/issues/837 * <- latest problem (2/9)
+- https://vuejs-templates.github.io/webpack/static.html
+- https://vue-loader.vuejs.org/en/features/scoped-css.html
 
 # Scaffolding
 
@@ -59,6 +61,7 @@
 - https://css-tricks.com/aos-css-driven-scroll-animation-library/
 - https://prinzhorn.github.io/skrollr/
 - http://pixelcog.github.io/parallax.js/
+- https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
 
 # Stylus
 
