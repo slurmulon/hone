@@ -17,13 +17,15 @@
               <input
                 type="password"
                 v-model="password"
-                placeholder="Password" />
+                placeholder="Password" 
+                tabindex="2" />
             </div>
             <div class="pure-u-1-1">
               <input
                 type="text"
                 v-model="email"
-                placeholder="Email" />
+                placeholder="Email"
+                tabindex="3" />
             </div>
             <div class="pure-u-1-1">
               <!-- TODO: make link to portal page -->

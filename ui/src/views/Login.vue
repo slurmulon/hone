@@ -22,7 +22,10 @@
             </div>
             <div class="pure-u-1-1">
               <!-- TODO: make link to portal page -->
-              <button class="submit pure-button">Submit</button>
+              <!-- <button class="submit pure-button">Submit</button> -->
+              <router-link to="dashboard">
+                <button class="submit pure-button">Submit</button>
+              </router-link>
             </div>
             <div class="pure-u-1-1">
               <!-- <input id="keep-login" type="checkbox" />

@@ -220,7 +220,6 @@
 
 <script>
 // import Counter from '../components/Counter'
-// import Layout from '../components/Layout'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -229,7 +228,6 @@ AOS.init({ duration: 2000 })
 export default {
   components: {
     // Counter
-    // Layout
   }
 }
 </script>
@@ -288,6 +286,7 @@ p {
 }
 
 #menu .logo {
+  /*width: 150px;*/
   float: left;
   margin-right: 0;
 }
@@ -304,26 +303,12 @@ main, #main {
   height: 100%;
 }
 
-/*
- * -- BANNER --
- * The top banner with the headings. By using a combination
- * of `display: table;` and `display: table-cell;`, we can
- * vertically center the text.
- */
-
 .banner {
-  /*background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;*/
-  /*background: url('https://images.unsplash.com/photo-1482385916434-814664df9c5b') 0 0 no-repeat fixed;*/
-  /*background: url('https://images.unsplash.com/photo-1461782296610-c552d61b149a?dpr=3.5') 0 0 no-repeat fixed;*/
-  /*background: url('https://images.unsplash.com/photo-1482957937087-5e83a32478c9?dpr=3.5&auto=format')no-repeat fixed;*/
-  /*background: url('https://images.unsplash.com/photo-1446776877081-d282a0f896e2?dpr=3.5') 0 0 no-repeat fixed;*/
-  /*background: url('https://images.unsplash.com/photo-1444424050109-31f057e1e858?dpr=3.5'); */ /* BEST */
   background: url('/static/bg-mountains.jpg');
   background-position-y: 50%;
   text-align: center;
   background-size: cover;
 /*  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');*/
-
   height: 200px;
   width: 100%;
   margin-bottom: 3em;

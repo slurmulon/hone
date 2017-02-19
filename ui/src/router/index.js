@@ -3,8 +3,10 @@ import Router from 'vue-router'
 import Home from '../views/Home'
 import Login from '../views/Login'
 import Register from '../views/Register'
-// import SignUp from '../views/SignUp'
+import Dashboard from '../views/Dashboard'
+// FIXME: rename these to HomeHeader and DashHeader respectively
 import HomeMenu from '../components/home/Menu'
+import DashMenu from '../components/dashboard/Menu'
 
 Vue.use(Router)
 
@@ -35,6 +37,18 @@ export default new Router({
         default: Register,
         menu: HomeMenu
       }
+    },
+    {
+      path: '/dashboard',
+      components: {
+        default: Dashboard,
+        menu: DashMenu
+      }
+      // data: {
+      //   'menuClass': {
+      //     'dashboard-menu': true
+      //   }
+      // }
     }
     // {
     //   path: '/project/:id',

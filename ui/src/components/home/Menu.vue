@@ -1,53 +1,66 @@
 <template>
-  <div class="home-menu">
-    <ul class="home-nav">
-      <li>
-        <a href="#">
-          <i class="fa fa-cogs"></i>
-          Install
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/slurmulon/hone">
-          <i class="fa fa-github"></i>
-          Source
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="fa fa-question"></i>
-          About
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="fa fa-phone"></i>
-          Contact
-        </a>
-      </li>
-    </ul>
-    <!-- <a class="pure-button">Login</a>
-    <a class="pure-button">Register</a> -->
-    <router-link
-        to="login"
-        class="pure-button">
-      Login
-    </router-link>
-    <router-link 
-        to="register"
-        class="pure-button">
-      Register
-    </router-link>
-  </div>
+  <app-header>
+    <div class="home-menu">
+      <ul class="home-nav">
+        <li>
+          <a href="#">
+            <i class="fa fa-cogs"></i>
+            Install
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/slurmulon/hone">
+            <i class="fa fa-github"></i>
+            Source
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-question"></i>
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-phone"></i>
+            Contact
+          </a>
+        </li>
+      </ul>
+      <!-- <a class="pure-button">Login</a>
+      <a class="pure-button">Register</a> -->
+      <router-link
+          to="login"
+          class="pure-button">
+        Login
+      </router-link>
+      <router-link 
+          to="register"
+          class="pure-button">
+        Register
+      </router-link>
+    </div>
+  </app-header>
 </template>
 
 <script>
+import AppHeader from '../AppHeader'
+
 export default {
-  name: 'home-menu'
+  name: 'home-menu',
+  components: {
+    AppHeader
+  }
 }
 </script>
 
-<style>
+<style scoped>
+div.home-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
 ul.home-nav {
   display: inline-flex;
   list-style-type: none;
@@ -72,10 +85,10 @@ ul.home-nav li a:hover {
   color: white !important;
 }
 
-.home-menu {
+/*.home-menu {
   position: absolute;
   right: 0;
-}
+}*/
 
 .home-menu .pure-button {
   border: 3px solid #686884;

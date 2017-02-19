@@ -186,6 +186,7 @@ appears on the left side of the page.
 
 #menu .logo {
   width: 150px;
+  height: 100%;
 }
 
 /*
@@ -207,10 +208,11 @@ Remove all background/borders, since we are applying them to #menu.
 /*
 Add that light border to separate items into groups.
 */
-#menu .pure-menu ul,
+/* FIXME: break out into Board.vue; */
+/*#menu .pure-menu ul,
 #menu .pure-menu .menu-item-divided {
   border-top: 1px solid #333;
-}
+}*/
 
 /*
 Change color of the anchor links on hover/focus.
