@@ -19,7 +19,7 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.json', '.styl'],
     modules: [
       resolve('src'),
       resolve('node_modules')
@@ -55,8 +55,8 @@ module.exports = {
       },
       {
         test: /\.styl$/,
-        loader: 'stylus-loader',
-        include: [resolve('src')]
+        loaders: ['style-loader', 'css-loader', 'stylus-loader'],
+        include: [resolve('src/styles')]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

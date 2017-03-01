@@ -23,20 +23,26 @@ export default {
 #menu {
   bottom: 0;
   width: 150px;
-  /*background: yellow;*/
 }
 
 /* FIXME: scoping is fucked up here, doesn't apply to element */;
 .logo {
   height: 100%;
-  background: pink;
 }
 
 .dash-menu {
   left: 0;
   width: 150px;
   height: 100%;
-  background: red;
+  background: #261E25;
+  /*background: #f2f2f2;*/
+  border-right: 1px solid #333;
+}
+
+.dash-menu a {
+  display: block;
+  padding: 1em;
+  border-bottom: 1px solid #333;
 }
 </style>
 

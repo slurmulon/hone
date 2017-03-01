@@ -4,7 +4,6 @@
       <a class="pure-menu-heading" href="#">hone</a>
 
       <slot></slot>
-      <!-- <router-view name="menu"></router-view> -->
     </div>
   </div>
 </template>
@@ -20,3 +19,4 @@ export default {
   width: 150px;
 }
 </style>
+
