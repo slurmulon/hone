@@ -27,9 +27,13 @@
       </section>
 
       <!-- TODO: break out into its own component -->
-      <div class="feed pure-g">
+      <!-- <div class="feed pure-g">
         <h2>Feed</h2>
-      </div>
+      </div> -->
+    </div>
+
+    <div class="feed pure-g">
+      <h2>Feed</h2>
     </div>
   </div>
 </template>
@@ -49,7 +53,7 @@ export default {
 
 <style scoped>
 #main {
-  /*margin-left: 150px;*/
+  margin-left: 150px; /* TODO: remove need for this once flexbox stuff is done; */
   /*padding-left: 2em;
   padding-top: 1em;*/
   /* background: #fff; */
@@ -76,8 +80,9 @@ export default {
 
 .portal .page {
   display: flex;
-  flex-flow: row-wrap;
+  flex-flow: row wrap;
   flex: 1 90%;
+  align-content: flex-start;
 }
 
 .portal .page > .actions {
@@ -97,27 +102,34 @@ export default {
   justify-content: space-around;*/
   /*align-items: stretch;
   justify-content: space-between;*/
-  display: flex;
+
+  /*display: flex;*/
+  display: inline-flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: stretch;
-  width: 90%;
+  flex: 1 100%;
+  /*flex: 0 90%;*/
+  /*width: 90%;*/
   /*padding-left: 2em;
   padding-top: 1em;*/
 }
 
 .portal .panel {
-  border: 1px solid #686884;
   width: 100%;
+  margin: 2em 2em 0 2em;
+  padding: 2em;
+  border: 1px solid #686884;
 }
 
 /* FIXME: better solution is to surround the section and feed with a parent flex container */
 .portal .feed {
-  position: fixed;
+  /*position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
-  width: 10%;
+  width: 10%;*/
+  flex: 1 10%;
   /*border-left: 1px solid #456272;*/
   border-left: 1px solid #686884;
   background: #2b222a;

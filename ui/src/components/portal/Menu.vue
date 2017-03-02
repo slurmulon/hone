@@ -20,15 +20,17 @@ export default {
 </script>
 
 <style scoped>
+/* FIXME: needs to be moved to a higher level, or refactor the template */
 header {
   flex: 0 10%;
 }
 
 header > #menu {
-  bottom: 0;
+  /*bottom: 0;*/
   /*width: 150px;*/
-  width: 100%;
+  /*width: 100%;*/
   height: 100%;
+  width: auto;
 }
 
 /* FIXME: scoping is fucked up here, doesn't apply to element */;
