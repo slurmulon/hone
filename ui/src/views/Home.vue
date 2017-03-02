@@ -6,6 +6,9 @@
         <h1 class="banner-head" data-aos="zoom-in">
           Limitless project management is finally here
         </h1>
+        <p>
+          <a href="pure-button">Join Free</a>
+        </p>
       </div>
 
       <div class="main-content">
@@ -232,6 +235,8 @@ export default {
 }
 </script>
 
+<!-- FIXME: need to break out some of these styles into app.css,
+try adding `scoped` :( -->
 <style>
 body {
   background: #261E25 !important;
@@ -272,7 +277,7 @@ p {
 }*/
 
 #layout {
-  padding-left: 0; /* left col width "#menu" */
+  padding-left: 0;
   left: 0;
   background: #261E25;
   height: 100%;
@@ -283,10 +288,23 @@ p {
   margin-left: 0;
   background: none !important; /* FIXME: figure out how to scope this stuff better */
   overflow-y: hidden !important; /* FIXME: figure out how to scope this stuff better */
+
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*bottom: 0;*/ /* FIXME: break out */
+  z-index: 1000; /* so the menu or its navicon stays above all content */
+  /*background: #191818;*/ /* dark theme */
+  background: #fff;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 #menu .logo {
-  /*width: 150px;*/
+  width: 150px;
+  height: 100%;
   float: left;
   margin-right: 0;
 }

@@ -16,4 +16,3 @@ const app = new Vue({
 })
 
 export { app, router, store }
-

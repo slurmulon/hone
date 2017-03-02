@@ -3,10 +3,10 @@ import Router from 'vue-router'
 import Home from '../views/Home'
 import Login from '../views/Login'
 import Register from '../views/Register'
-import Dashboard from '../views/Dashboard'
+import Portal from '../views/Portal'
 // FIXME: rename these to HomeHeader and DashHeader respectively
 import HomeMenu from '../components/home/Menu'
-import DashMenu from '../components/dashboard/Menu'
+import PortalMenu from '../components/portal/Menu'
 
 Vue.use(Router)
 
@@ -39,10 +39,10 @@ export default new Router({
       }
     },
     {
-      path: '/dashboard',
+      path: '/portal',
       components: {
-        default: Dashboard,
-        menu: DashMenu
+        default: Portal,
+        menu: PortalMenu
       }
       // data: {
       //   'menuClass': {

@@ -118,6 +118,23 @@ This is the parent `<div>` that contains the menu and the content area.
   left: 150px;
 }
 */
+
+/* EXPERIMENTAL */
+/*#layout {
+  display: flex;
+  align-items: stretch;
+  background: #261E25;
+  height: 100%;
+}
+
+#layout header {
+  flex: 0 10%;
+}*/
+
+main {
+  width: 100%;
+}
+
 /*
 Pre-application pages, such as the home and login / sign up
 */
@@ -169,25 +186,22 @@ The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page.
 */
 
-#menu {
-  /*margin-left: -150px;*/ /* FIXME: break out */
-  /*width: 150px;*/ /* FIXME: break out */
+/*#menu {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  /*bottom: 0;*/ /* FIXME: break out */
-  z-index: 1000; /* so the menu or its navicon stays above all content */
-  /*background: #191818;*/ /* dark theme */
+  z-index: 1000;
   background: #fff;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-}
+}*/
 
 #menu .logo {
-  width: 150px;
+  /*width: 150px;*/
   height: 100%;
 }
+
 
 /*
 All anchors inside the menu should be styled like this.
@@ -252,6 +266,7 @@ This styles the menu heading.
   font-size: 120%;
   color: #fff;
   margin: 0;
+  height: 100px;
   padding-top: 2.0em;
 }
 

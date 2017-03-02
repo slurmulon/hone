@@ -1,6 +1,6 @@
 <template>
   <app-header>
-    <div class="dash-menu">
+    <div class="portal-menu">
       <a href="#">Projects</a>
       <a href="#">Boards</a>
       <a href="#">Users</a>
@@ -12,7 +12,7 @@
 import AppHeader from '../AppHeader'
 
 export default {
-  name: 'dashboard-menu',
+  name: 'portal-menu',
   components: {
     AppHeader
   }
@@ -20,26 +20,34 @@ export default {
 </script>
 
 <style scoped>
-#menu {
-  bottom: 0;
-  width: 150px;
+header {
+  flex: 0 10%;
 }
 
-/* FIXME: scoping is fucked up here, doesn't apply to element */;
-.logo {
+header > #menu {
+  bottom: 0;
+  /*width: 150px;*/
+  width: 100%;
   height: 100%;
 }
 
-.dash-menu {
+/* FIXME: scoping is fucked up here, doesn't apply to element */;
+header > #menu .logo {
+  height: 100%;
+  width: 100%;
+}
+
+.portal-menu {
   left: 0;
-  width: 150px;
+  /*width: 150px;*/
+  width: 100%;
   height: 100%;
   background: #261E25;
   /*background: #f2f2f2;*/
   border-right: 1px solid #333;
 }
 
-.dash-menu a {
+.portal-menu a {
   display: block;
   padding: 1em;
   border-bottom: 1px solid #333;

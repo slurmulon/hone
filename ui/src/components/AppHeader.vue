@@ -3,6 +3,7 @@
     <div class="pure-menu logo">
       <a class="pure-menu-heading" href="#">hone</a>
 
+      <!-- FIXME: move this slot out of the logo div -->
       <slot></slot>
     </div>
   </div>
@@ -14,9 +15,9 @@ export default {
 }
 </script>
 
-<style>
-#menu .pure-menu-heading {
+<style scoped>
+/*#menu .pure-menu-heading {
   width: 150px;
-}
+}*/
 </style>
 

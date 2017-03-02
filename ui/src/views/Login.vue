@@ -23,7 +23,7 @@
             <div class="pure-u-1-1">
               <!-- TODO: make link to portal page -->
               <!-- <button class="submit pure-button">Submit</button> -->
-              <router-link to="dashboard">
+              <router-link to="portal">
                 <button class="submit pure-button">Submit</button>
               </router-link>
             </div>
