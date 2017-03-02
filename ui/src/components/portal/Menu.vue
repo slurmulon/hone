@@ -1,9 +1,9 @@
 <template>
   <app-header>
     <div class="portal-menu">
-      <a href="#">Projects</a>
-      <a href="#">Boards</a>
-      <a href="#">Users</a>
+      <a href="#"><i class="fa fa-plus"></i></a>
+      <a href="#"><i class="fa fa-cogs"></i></a>
+      <a href="#"><i class="fa fa-users"></i></a>
     </div>
   </app-header>
 </template>
@@ -40,13 +40,14 @@ header > #menu .logo {
 }
 
 .portal-menu {
-  left: 0;
+  /*left: 0;*/
   /*width: 150px;*/
   width: 100%;
   height: 100%;
   background: #261E25;
   /*background: #f2f2f2;*/
   border-right: 1px solid #333;
+  text-align: right;
 }
 
 .portal-menu a {

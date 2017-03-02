@@ -6,9 +6,9 @@
         <h1 class="banner-head" data-aos="zoom-in">
           Limitless project management is finally here
         </h1>
-        <p>
+        <!-- <p>
           <a href="pure-button">Join Free</a>
-        </p>
+        </p> -->
       </div>
 
       <div class="main-content">

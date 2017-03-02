@@ -1,16 +1,44 @@
 <template>
   <div id="main" class="portal">
     <div class="page">
+      <!-- TODO: break this out into portal-browse or the like -->
       <div class="actions">
         <form class="pure-form pure-g">
-          <div class="pure-u-1-8">
-            <input class="pure-input-1" type="text" placeholder="Dashboard"/>
+          <div class="group dashboards pure-u-1-8">
+            <a href="#">
+              Dashboard
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
           </div>
-          <div class="pure-u-1-8">
-            <input class="pure-input-1" type="text" placeholder="Board"/>
+          <div class="group dashboards pure-u-1-8">
+            <a href="#">
+              Projects
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
           </div>
-          <div class="pure-u-1-8">
-            <input class="pure-input-1" type="text" placeholder="Project"/>
+          <div class="group dashboards pure-u-1-8">
+            <a href="#">
+              Boards
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="group dashboards pure-u-1-8">
+            <a href="#">
+              Tags
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="group dashboards pure-u-1-8">
+            <a href="#">
+              Dashboard
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="search-input pure-u-2-8">
+            <input type="text" class="pure-input-rounded">
+          </div>
+          <div class="search-go pure-u-1-8">
+            <button type="submit" class="pure-button">Search</button>
           </div>
         </form>
       </div>
@@ -57,6 +85,8 @@ export default {
   /*padding-left: 2em;
   padding-top: 1em;*/
   /* background: #fff; */
+
+  /*flex: 1 100%;*/ /* TODO: use this once layout is fixed a bit; */
 }
 
 #layout {
@@ -92,7 +122,38 @@ export default {
   border-bottom: 1px solid #333;
 }
 
-.portal .page > .actions input, select {
+.portal .page > .actions a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  /*color: #809c9e;*/
+  /*color: #baced3;*/
+  /*color: #a1b1b5;*/
+  color: #aaa;
+  border-right: 1px solid #333; /*#5a839b;*/
+}
+
+.portal .page > .actions a:hover {
+  color: #f5f5f5;
+  background: #261E21;
+  border-bottom: 2px solid #a4c8dd;
+}
+
+.portal .page > .actions .group {
+  /*padding-left: 2em;*/
+}
+
+.portal .page > .actions .group i {
+  padding-left: .5em;
+}
+
+.portal .search-input,
+.portal .search-go {
+  text-align: center;
+}
+
+.portal .page > .actions .item, .group, input, select {
   height: 5em;
 }
 
@@ -129,7 +190,9 @@ export default {
   right: 0;
   bottom: 0;
   width: 10%;*/
-  flex: 1 10%;
+
+  /*flex: 1 10%;*/
+  flex: 1 12%;
   /*border-left: 1px solid #456272;*/
   border-left: 1px solid #686884;
   background: #2b222a;
@@ -141,7 +204,7 @@ export default {
   /*padding-left: 1em;*/
   width: 100%;
   text-align: center;
-  margin: 0;
+  margin: 1em 0;
 }
 </style>
 
