@@ -1,5 +1,6 @@
 <template>
   <app-header>
+    <!-- TODO: maybe highlight link of page we're on -->
     <div class="portal-menu">
       <a href="#"><i class="fa fa-plus"></i></a>
       <a href="#"><i class="fa fa-cogs"></i></a>

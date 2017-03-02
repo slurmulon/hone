@@ -113,11 +113,12 @@ export default {
   flex-flow: row wrap;
   flex: 1 90%;
   align-content: flex-start;
+  overflow-y: scroll;
 }
 
 .portal .page > .actions {
   flex: 1 100%;
-  height: 5em;
+  /*height: 5em;*/
   line-height: 5em;
   border-bottom: 1px solid #333;
 }
