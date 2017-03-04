@@ -44,8 +44,9 @@
         <div class="pinned panel pure-g">
           <h2>Pinned</h2>
           <div class="controls">
-            <i class="fa fa-plus"></i>
-            <i class="fa fa-filter"></i>
+            <a href><i class="fa fa-plus"></i></a>
+            <a href><i class="fa fa-cogs"></i></a>
+            <a href><i class="fa fa-trash"></i></a>
           </div>
           <div class="list">
             <div class="item">
@@ -61,9 +62,17 @@
         </div>
         <div class="assigned panel pure-g">
           <h2>Assigned</h2>
+          <div class="controls">
+            <a href><i class="fa fa-cogs"></i></a>
+            <a href><i class="fa fa-trash"></i></a>
+          </div>
         </div>
         <div class="log panel pure-g">
           <h2>History</h2>
+          <div class="controls">
+            <a href><i class="fa fa-cogs"></i></a>
+            <a href><i class="fa fa-trash"></i></a>
+          </div>
         </div>
       </section>
     </div>
@@ -227,8 +236,15 @@ export default {
   right: 2em;
 }
 
-.portal .panel .controls i {
+.portal .panel .controls a {
+  /*color: pink;*/ /* actually looks good */
+  color: #a4c8dd;
+  opacity: 0.25;
   margin-right: 1em;
+}
+
+.portal .panel .controls a:hover {
+  opacity: 0.75;
 }
 
 .portal .panel > .list {
@@ -272,6 +288,7 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding: 1em;
   border-left: none;
 }
 
