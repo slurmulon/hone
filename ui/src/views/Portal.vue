@@ -3,44 +3,50 @@
     <div class="page">
       <!-- TODO: break this out into portal-browse or the like -->
       <div class="actions pure-form">
-        <div class="action group dashboards pure-u-1-8">
+        <div class="action group dashboards">
           <a href="#">
             Dashboard
             <i class="fa fa-angle-down" aria-hidden="true"></i>
           </a>
         </div>
-        <div class="action group projects pure-u-1-8">
+        <div class="action group projects">
           <a href="#">
             Projects
             <i class="fa fa-angle-down" aria-hidden="true"></i>
           </a>
         </div>
-        <div class="action group boards pure-u-1-8">
+        <div class="action group boards">
           <a href="#">
             Boards
             <i class="fa fa-angle-down" aria-hidden="true"></i>
           </a>
         </div>
-        <div class="action group tags pure-u-1-8">
+        <div class="action group tags">
           <a href="#">
             Tags
             <i class="fa fa-angle-down" aria-hidden="true"></i>
           </a>
         </div>
-        <div class="action group search-input pure-u-2-8">
+        <div class="action group search-input">
           <input type="text" class="pure-input-rounded" />
         </div>
-        <div class="action group search-go pure-u-1-8">
+        <div class="action group search-go">
           <button type="submit" class="pure-button">Search</button>
         </div>
-        <div class="action group theme pure-u-1-8">
+        <div class="action group theme">
           <i class="fa fa-moon-o" aria-hidden="true"></i>
         </div>
       </div>
 
+      <!-- TODO: make these generic so that people can just add
+      arbitrary boxes and specify a title -->
       <section>
         <div class="pinned panel pure-g">
           <h2>Pinned</h2>
+          <div class="controls">
+            <i class="fa fa-plus"></i>
+            <i class="fa fa-filter"></i>
+          </div>
           <div class="list">
             <div class="item">
               Project 1
@@ -58,6 +64,10 @@
         </div>
         <div class="log panel pure-g">
           <h2>History</h2>
+          <div class="controls">
+            <i class="fa fa-plus"></i>
+            <i class="fa fa-filter"></i>
+          </div>
         </div>
       </section>
 
@@ -135,7 +145,8 @@ export default {
   display: inline-flex;
   flex-flow: row nowrap;
   flex: 1 100%;
-  line-height: 5em; /*height: 5em;*/
+  line-height: 5em;
+  height: 5em;
   border-bottom: 1px solid #333;
 }
 
@@ -147,9 +158,11 @@ export default {
   white-space: nowrap;
   /*color: #809c9e;*/
   /*color: #baced3;*/
-  /*color: #a1b1b5;*/
-  color: #aaa;
+  color: #a1b1b5;
+  /*color: #aaa;*/
+  /*color: #525252;*/
   border-right: 1px solid #333; /*#5a839b;*/
+  padding-left: 1em;
 }
 
 .portal .page > .actions a:hover {
@@ -158,16 +171,25 @@ export default {
   border-bottom: 2px solid #a4c8dd;
 }
 
+.portal .page > .actions i {
+  padding-right: 1em;
+}
+
 .portal .page > .actions input {
+  width: 100%;
   border-top: none;
 }
 
 .portal .page > .actions .group {
-  /*padding-left: 2em;*/
+  flex: 1;
 }
 
 .portal .page > .actions .group i {
   padding-left: .5em;
+}
+
+.portal .page > .actions .search-input {
+  flex: 2;
 }
 
 .portal .search-input,
@@ -199,9 +221,19 @@ export default {
 }
 
 .portal .panel {
+  position: relative;
   width: 100%;
   padding: 2em;
   /*border: 1px solid #686884;*/
+}
+
+.portal .panel .controls {
+  position: absolute;
+  right: 2em;
+}
+
+.portal .panel .controls i {
+  margin-right: 1em;
 }
 
 .portal .panel > .list {
@@ -242,10 +274,11 @@ export default {
 .portal .feed h2 {
   /*color: #a4c8dd;*/
   color: #686884;
-  /*padding-left: 1em;*/
   width: 100%;
+  padding: 1em 0;
+  height: 100px;
   text-align: center;
-  margin: 1em 0;
+  border-bottom: 1px solid #333;
 }
 </style>
 
