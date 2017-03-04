@@ -2,9 +2,11 @@
   <app-header>
     <!-- TODO: maybe highlight link of page we're on -->
     <div class="portal-menu">
-      <a href="#"><i class="fa fa-plus"></i></a>
-      <a href="#"><i class="fa fa-cogs"></i></a>
-      <a href="#"><i class="fa fa-users"></i></a>
+      <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-users" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
     </div>
   </app-header>
 </template>
@@ -45,7 +47,8 @@ header > #menu .logo {
   /*width: 150px;*/
   width: 100%;
   height: 100%;
-  background: #261E25;
+  background: #2b222a;
+  /*background: #261E25;*/ /* looks good */
   /*background: #f2f2f2;*/
   border-right: 1px solid #333;
   text-align: right;
@@ -55,6 +58,10 @@ header > #menu .logo {
   display: block;
   padding: 1em;
   border-bottom: 1px solid #333;
+}
+
+.portal-menu a:hover {
+  background: #261E21;
 }
 </style>
 

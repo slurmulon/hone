@@ -3,45 +3,77 @@
     <div class="page">
       <!-- TODO: break this out into portal-browse or the like -->
       <div class="actions">
-        <form class="pure-form pure-g">
+        <!-- <form class="pure-form pure-g">
           <div class="group dashboards pure-u-1-8">
             <a href="#">
               Dashboard
               <i class="fa fa-angle-down" aria-hidden="true"></i>
             </a>
           </div>
-          <div class="group dashboards pure-u-1-8">
+          <div class="group projects pure-u-1-8">
             <a href="#">
               Projects
               <i class="fa fa-angle-down" aria-hidden="true"></i>
             </a>
           </div>
-          <div class="group dashboards pure-u-1-8">
+          <div class="group boards pure-u-1-8">
             <a href="#">
               Boards
               <i class="fa fa-angle-down" aria-hidden="true"></i>
             </a>
           </div>
-          <div class="group dashboards pure-u-1-8">
+          <div class="group tags pure-u-1-8">
             <a href="#">
               Tags
               <i class="fa fa-angle-down" aria-hidden="true"></i>
             </a>
           </div>
-          <div class="group dashboards pure-u-1-8">
-            <a href="#">
-              Dashboard
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="search-input pure-u-2-8">
+          <div class="group search-input pure-u-2-8">
             <input type="text" class="pure-input-rounded">
           </div>
-          <div class="search-go pure-u-1-8">
+          <div class="group search-go pure-u-1-8">
             <button type="submit" class="pure-button">Search</button>
           </div>
-        </form>
+          <div class="group theme pure-u-1-8">
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+          </div>
+        </form> -->
+
+        <div class="action-group dashboards pure-u-1-8">
+          <a href="#">
+            Dashboard
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="action group projects pure-u-1-8">
+          <a href="#">
+            Projects
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="action group boards pure-u-1-8">
+          <a href="#">
+            Boards
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="action group tags pure-u-1-8">
+          <a href="#">
+            Tags
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="action group search-input pure-u-2-8">
+          <input type="text" class="pure-input-rounded">
+        </div>
+        <div class="action group search-go pure-u-1-8">
+          <button type="submit" class="pure-button">Search</button>
+        </div>
+        <div class="action group theme pure-u-1-8">
+          <i class="fa fa-moon-o" aria-hidden="true"></i>
+        </div>
       </div>
+
       <section>
         <div class="pinned panel pure-g">
           <h2>Pinned</h2>
@@ -61,7 +93,12 @@
     </div>
 
     <div class="feed pure-g">
-      <h2>Feed</h2>
+      <h2>
+        <i class="fa fa-feed" aria-hidden="true"></i>
+      </h2>
+      <div class="item">
+        <div class="">
+      </div>
     </div>
   </div>
 </template>
@@ -113,13 +150,14 @@ export default {
   flex-flow: row wrap;
   flex: 1 90%;
   align-content: flex-start;
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
 }
 
 .portal .page > .actions {
+  display: inline-flex;
+  flex-flow: row nowrap;
   flex: 1 100%;
-  /*height: 5em;*/
-  line-height: 5em;
+  line-height: 5em; /*height: 5em;*/
   border-bottom: 1px solid #333;
 }
 
@@ -128,6 +166,7 @@ export default {
   width: 100%;
   text-align: center;
   text-decoration: none;
+  white-space: nowrap;
   /*color: #809c9e;*/
   /*color: #baced3;*/
   /*color: #a1b1b5;*/
@@ -139,6 +178,10 @@ export default {
   color: #f5f5f5;
   background: #261E21;
   border-bottom: 2px solid #a4c8dd;
+}
+
+.portal .page > .actions input {
+  border-top: none;
 }
 
 .portal .page > .actions .group {
@@ -179,9 +222,18 @@ export default {
 
 .portal .panel {
   width: 100%;
-  margin: 2em 2em 0 2em;
+  /*margin: 2em 2em 0 2em;*/
   padding: 2em;
   border: 1px solid #686884;
+}
+
+.portal .panel.pinned {
+  flex: 100%;
+}
+
+.portal .panel.assigned,
+.portal .panel.log {
+  flex: 2;
 }
 
 /* FIXME: better solution is to surround the section and feed with a parent flex container */

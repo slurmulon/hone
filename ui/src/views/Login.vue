@@ -55,18 +55,18 @@ export default {
 }
 </script>
 
-<style>
-#main.login {
+<style scoped>
+.login {
   align-items: center;
   /*align-content: center;*/
   justify-content: center;
 }
 
-#main.login .page {
+.login .page {
   width: auto;
 }
 
-#main.login .pure-form input {
+.login .pure-form input {
   width: 100%;
   background: transparent;
   box-shadow: none;
@@ -76,7 +76,7 @@ export default {
   padding: 1.25em;
 }
 
-#main.login .pure-form button.submit {
+.login .pure-form button.submit {
   width: 100%;
   color: white;
   background: transparent;
@@ -90,13 +90,13 @@ export default {
   transition: all 0.5s ease;
 }
 
-#main.login .pure-form button.submit:hover {
+.login .pure-form button.submit:hover {
   /*border: 1px solid #A4C8DD;*/
   border: 1px solid #fff;
 }
 
-#main.login .pure-form .pure-u-1-1,
-#main.login .pure-form .pure-u-1-2 {
+.login .pure-form .pure-u-1-1,
+.login .pure-form .pure-u-1-2 {
   padding: 1em 2em 1em 0;
 }
 </style>
