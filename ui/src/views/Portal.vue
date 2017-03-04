@@ -31,7 +31,9 @@
           <input type="text" class="pure-input-rounded" />
         </div>
         <div class="action group search-go">
-          <button type="submit" class="pure-button">Search</button>
+          <button type="submit" class="pure-button">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
         </div>
         <div class="action group theme">
           <i class="fa fa-moon-o" aria-hidden="true"></i>
@@ -196,6 +198,10 @@ export default {
   flex: 2;
 }
 
+.portal .page > .actions .search-input > input {
+  padding: 0 1.5em;
+}
+
 .portal .search-input,
 .portal .search-go {
   text-align: center;
@@ -290,6 +296,8 @@ export default {
   margin: 0 auto;
   padding: 1em;
   border-left: none;
+  text-align: center;
+  opacity: 0.5;
 }
 
 .portal .feed h2 {
