@@ -64,24 +64,19 @@
         </div>
         <div class="log panel pure-g">
           <h2>History</h2>
-          <div class="controls">
-            <i class="fa fa-plus"></i>
-            <i class="fa fa-filter"></i>
-          </div>
         </div>
       </section>
-
-      <!-- TODO: break out into its own component -->
-      <!-- <div class="feed pure-g">
-        <h2>Feed</h2>
-      </div> -->
     </div>
 
-    <div class="feed pure-g">
+    <div class="feed">
       <h2>
         <i class="fa fa-feed" aria-hidden="true"></i>
       </h2>
-      <div class="item">
+      <!-- <div class="item">
+        No recent activity
+      </div> -->
+      <div class="feed empty">
+        <i>No recent activity</i>
       </div>
     </div>
   </div>
@@ -269,6 +264,15 @@ export default {
   /*border-left: 1px solid #456272;*/
   border-left: 1px solid #686884;
   background: #2b222a;
+}
+
+.portal .feed.empty {
+  height: calc(100% - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-left: none;
 }
 
 .portal .feed h2 {
