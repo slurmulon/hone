@@ -2,44 +2,8 @@
   <div id="main" class="portal">
     <div class="page">
       <!-- TODO: break this out into portal-browse or the like -->
-      <div class="actions">
-        <!-- <form class="pure-form pure-g">
-          <div class="group dashboards pure-u-1-8">
-            <a href="#">
-              Dashboard
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="group projects pure-u-1-8">
-            <a href="#">
-              Projects
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="group boards pure-u-1-8">
-            <a href="#">
-              Boards
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="group tags pure-u-1-8">
-            <a href="#">
-              Tags
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </a>
-          </div>
-          <div class="group search-input pure-u-2-8">
-            <input type="text" class="pure-input-rounded">
-          </div>
-          <div class="group search-go pure-u-1-8">
-            <button type="submit" class="pure-button">Search</button>
-          </div>
-          <div class="group theme pure-u-1-8">
-            <i class="fa fa-moon-o" aria-hidden="true"></i>
-          </div>
-        </form> -->
-
-        <div class="action-group dashboards pure-u-1-8">
+      <div class="actions pure-form">
+        <div class="action group dashboards pure-u-1-8">
           <a href="#">
             Dashboard
             <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -64,7 +28,7 @@
           </a>
         </div>
         <div class="action group search-input pure-u-2-8">
-          <input type="text" class="pure-input-rounded">
+          <input type="text" class="pure-input-rounded" />
         </div>
         <div class="action group search-go pure-u-1-8">
           <button type="submit" class="pure-button">Search</button>
@@ -77,6 +41,17 @@
       <section>
         <div class="pinned panel pure-g">
           <h2>Pinned</h2>
+          <div class="list">
+            <div class="item">
+              Project 1
+            </div>
+            <div class="item">
+              Project 2
+            </div>
+            <div class="item">
+              Project 3
+            </div>
+          </div>
         </div>
         <div class="assigned panel pure-g">
           <h2>Assigned</h2>
@@ -97,7 +72,6 @@
         <i class="fa fa-feed" aria-hidden="true"></i>
       </h2>
       <div class="item">
-        <div class="">
       </div>
     </div>
   </div>
@@ -143,6 +117,10 @@ export default {
 
 .portal h1 {
   font-weight: normal;
+}
+
+.portal h2 {
+  margin: 0;
 }
 
 .portal .page {
@@ -222,9 +200,19 @@ export default {
 
 .portal .panel {
   width: 100%;
-  /*margin: 2em 2em 0 2em;*/
   padding: 2em;
-  border: 1px solid #686884;
+  /*border: 1px solid #686884;*/
+}
+
+.portal .panel > .list {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.portal .panel > .list .item {
+  width: 100%;
+  padding: 1em 0;
+  border-bottom: 1px solid #333;
 }
 
 .portal .panel.pinned {
