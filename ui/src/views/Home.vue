@@ -237,309 +237,226 @@ export default {
 
 <!-- FIXME: need to break out some of these styles into app.css,
 try adding `scoped` :( -->
-<style>
-body {
-  background: #261E25 !important;
-}
+<style lang="stylus">
+body
+  background #261E25 !important
 
-h2, h3 {
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  font-weight: 600;
-}
+h2, h3
+  letter-spacing 0.25em
+  text-transform uppercase
+  font-weight 600
 
-p {
-  line-height: 1.6em;
-}
+p
+  line-height 1.6em
 
-.main-content {
-  margin: 0 auto;
-}
+.main-content
+  margin 0 auto
 
-.main-box {
-  /*padding: 0.5em 2em;*/
-}
-.pure-menu {
-  box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
-}
+.main-box
+  /*padding 0.5em 2em*/
 
-.pure-menu-link {
-  padding: .5em .7em;
-}
+.pure-menu
+  box-shadow 0 1px 1px rgba(0,0,0, 0.10)
 
-/*#layout header {
-  width: 100%;
-}
-*/
-/*#layout.active #header {
-  left: 0;
-  width: 150px;
-}*/
+.pure-menu-link
+  padding .5em .7em
 
-#layout {
-  padding-left: 0;
-  left: 0;
-  background: #261E25;
-  height: 100%;
-}
+#layout
+  padding-left 0
+  left 0
+  background #261E25
+  height 100%
 
-#menu {
-  left: 0;
-  margin-left: 0;
-  background: none !important; /* FIXME: figure out how to scope this stuff better */
-  overflow-y: hidden !important; /* FIXME: figure out how to scope this stuff better */
+#menu
+  left 0
+  margin-left 0
+  background none !important /* FIXME figure out how to scope this stuff better */
+  overflow-y hidden !important /* FIXME figure out how to scope this stuff better */
 
+  width 100%
+  position fixed
+  top 0
+  left 0
+  /*bottom 0*/ /* FIXME break out */
+  z-index 1000 /* so the menu or its navicon stays above all content */
+  /*background #191818*/ /* dark theme */
+  background #fff
+  overflow-y auto
+  -webkit-overflow-scrolling touch
 
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  /*bottom: 0;*/ /* FIXME: break out */
-  z-index: 1000; /* so the menu or its navicon stays above all content */
-  /*background: #191818;*/ /* dark theme */
-  background: #fff;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
+  .logo
+    width 150px
+    height 100%
+    float left
+    margin-right 0
 
-#menu .logo {
-  width: 150px;
-  height: 100%;
-  float: left;
-  margin-right: 0;
-}
+.menu-link
+  left 0
 
-.menu-link {
-  left: 0;
-}
+#layout.active .menu-link
+  left 0
 
-#layout.active .menu-link {
-  left: 0;
-}
+main, #main
+  height 100%
 
-main, #main {
-  height: 100%;
-}
+.banner
+  background url('/static/bg-mountains.jpg')
+  background-position-y 50%
+  text-align center
+  background-size cover
+  /*  filter progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale')*/
+  height 200px
+  width 100%
+  margin-bottom 3em
+  display table
 
-.banner {
-  background: url('/static/bg-mountains.jpg');
-  background-position-y: 50%;
-  text-align: center;
-  background-size: cover;
-/*  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');*/
-  height: 200px;
-  width: 100%;
-  margin-bottom: 3em;
-  display: table;
-}
+.banner-head
+  display table-cell
+  vertical-align middle
+  margin-bottom 0
+  font-size 2em
+  color white
+  font-weight 500
+  text-shadow 0 1px 1px black
+  // text-transform uppercase
 
-.banner-head {
-  display: table-cell;
-  vertical-align: middle;
-  margin-bottom: 0;
-  font-size: 2em;
-  color: white;
-  font-weight: 500;
-  text-shadow: 0 1px 1px black;
-  /*text-transform: uppercase;*/
-}
+.intro
+  text-align center
+  font-size 36px
+  /*font-size 1.5em*/
+  /*padding-top 2.5em*/
+  /*padding-bottom 5em*/
 
-.intro {
-  text-align: center;
-  font-size: 36px;
-  /*font-size: 1.5em;*/
-  /*padding-top: 2.5em;*/
-  /*padding-bottom: 5em;*/
-}
+.intro 
+  & > *
+    margin-top 6em
+    margin-bottom 6em
 
-.intro > * {
-  margin-top: 6em;
-  margin-bottom: 6em;
-}
+  .information
+    /*font-size 0.8em*/
+    font-size 32px
+    text-align left
 
-.intro .information {
-  /*font-size: 0.8em;*/
-  font-size: 32px;
-  text-align: left;
-}
+    .graphic
+      text-align center
 
-.intro .information .graphic {
-  text-align: center;
-}
+    img
+      width 50%
+      padding-top 1em
 
-.intro .information .graphic img {
-  width: 50%;
-  padding-top: 1em;
-}
-
-.information {
-  font-size: 32px;
-}
-
-.information .main-box {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-}
+    .main-box
+      padding-left 0.5em
+      padding-right 0.5em
 
 .pricing-tables,
 .information,
-.intro {
-  max-width: 980px;
-  margin: 6em auto;
-}
+.intro
+  max-width 980px
+  margin 6em auto
 
-.pricing-tables {
-  /*margin-bottom: 3.125em;*/
-  margin-bottom: 5em;
-  text-align: center;
-}
+.pricing-tables
+  /*margin-bottom 3.125em*/
+  margin-bottom 5em
+  text-align center
 
-/*
- * -- PRICING TABLE  --
- * Every pricing table has the .pricing-table class
- */
-.pricing-table {
-  border: 1px solid #ddd;
-  margin: 0 0.5em 2em;
-  padding: 0 0 3em;
-  background: #f7f7f7;
-}
+.pricing-table
+  border 1px solid #ddd
+  margin 0 0.5em 2em
+  padding 0 0 3em
+  background #f7f7f7
 
-/*
- * -- PRICING TABLE HEADER COLORS --
- * Choose a different color based on the type of pricing table.
- */
-.pricing-table-free .pricing-table-header {
-  /*background: #519251;*/
-  background: #a4c8dd;
-}
+.pricing-table-free .pricing-table-header
+  /*background #519251*/
+  background #a4c8dd
 
-.pricing-table-biz .pricing-table-header {
-  /*background: #2c4985;*/
-  background: #5a839b;
-}
+.pricing-table-biz .pricing-table-header
+  /*background #2c4985*/
+  background #5a839b
 
-.pricing-table-enterprise .pricing-table-header {
-  background: #456272;
-}
+.pricing-table-enterprise .pricing-table-header
+  background #456272
 
-/*
- * -- PRICING TABLE HEADER --
- * By default, a header is black/white, and has some styles for its <h2> name.
- */
-.pricing-table-header {
-  background: #111;
-  color: #fff;
-}
+.pricing-table-header
+  background #111
+  color #fff
 
-.pricing-table-header h2 {
-  margin: 0;
-  padding-top: 2em;
-  font-size: 1em;
-  font-weight: normal;
-}
+  h2
+    margin 0
+    padding-top 2em
+    font-size 1em
+    font-weight normal
 
-/*
- * -- PRICING TABLE PRICE --
- * Styles for the price and the corresponding <span>per month</span>
- */
-.pricing-table-price {
-  font-size: 6em;
-  margin: 0.2em 0 0;
-  font-weight: 100;
-}
+.pricing-table-price
+  font-size 6em
+  margin 0.2em 0 0
+  font-weight 100
 
-.pricing-table-price span {
-  display: block;
-  text-transform: uppercase;
-  font-size: 0.2em;
-  padding-bottom: 2em;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
-  *color: #fff;
-}
+  span
+    display block
+    text-transform uppercase
+    font-size 0.2em
+    padding-bottom 2em
+    font-weight 400
+    color rgba(255, 255, 255, 0.5)
 
-/*
- * -- PRICING TABLE LIST --
- * Each pricing table has a <ul> which is denoted by the .pricing-table-list class
- */
-.pricing-table-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+.pricing-table-list
+  list-style-type none
+  margin 0
+  padding 0
+  text-align center
 
-/*
- * -- PRICING TABLE LIST ELEMENTS --
- * Styles for the individual list elements within each pricing table
- */
-.pricing-table-list li {
-  padding: 0.8em 0;
-  background: #f7f7f7;
-  border-bottom: 1px solid #e7e7e7;
-}
+  li
+    padding 0.8em 0
+    background #f7f7f7
+    border-bottom 1px solid #e7e7e7
 
-/*
- * -- PRICING TABLE BUTTON --
- * Styles for the "Choose" button at the bottom of a pricing table.
- * This inherits from Pure Button.
- */
-.button-choose {
-  border: 1px solid #ccc;
-  background: #fff;
-  color: #333;
-  border-radius: 2em;
-  font-weight: bold;
-  position: relative;
-  bottom: -1.5em;
-}
+.button-choose
+  border 1px solid #ccc
+  background #fff
+  color #333
+  border-radius 2em
+  font-weight bold
+  position relative
+  bottom -1.5em
 
-.information-head {
-  /*color: white;*/
-  /*color: #bf9e9e;*/
-  color: #A4C8DD;
-  font-weight: 500;
-}
+.information-head
+  /*color white*/
+  /*color #bf9e9e*/
+  color #A4C8DD
+  font-weight 500
 
-.footer {
-  background: #111;
-  color: #888;
-  text-align: center;
-}
+.footer
+  background #111
+  color #888
+  text-align center
 
-.footer a {
-  color: #ddd;
-}
+.footer a
+  color #ddd
 
 /*
  * -- TABLET MEDIA QUERIES --
  * On tablets, we want to slightly adjust the size of the banner
  * text and add some vertical space between the various pricing tables
  */
-@media (min-width: 767px) {
-  .banner-head {
-    font-size: 4em;
-  }
-  .pricing-table {
-    margin-bottom: 0;
-  }
-}
-
+@media (min-width 767px)
+  .banner-head
+    font-size 4em
+  
+  .pricing-table
+    margin-bottom 0
+  
 /*
  * -- PHONE MEDIA QUERIES --
  * On phones, we want to reduce the height and font-size of the banner further
  */
-@media (min-width: 480px) {
-  .banner {
-    /* FIXME: use calc; */
-    /* height: 800px; */
-    /* height: 50%; */
-    height: 100%;
-  }
-  .banner-head {
-    font-size: 3em;
-  }
-}
+@media (min-width 480px)
+  .banner
+    /* FIXME use calc */
+    /* height 800px */
+    /* height 50% */
+    height 100%
+  
+  .banner-head
+    font-size 3em
 </style>
 

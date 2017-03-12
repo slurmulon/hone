@@ -55,48 +55,42 @@ export default {
 }
 </script>
 
-<style scoped>
-.login {
-  align-items: center;
-  /*align-content: center;*/
-  justify-content: center;
-}
+<style lang="stylus" scoped>
+.login
+  align-items center
+  // align-content center
+  justify-content center
 
-.login .page {
-  width: auto;
-}
+  .page
+    width auto
 
-.login .pure-form input {
-  width: 100%;
-  background: transparent;
-  box-shadow: none;
-  /*border: 1px solid #bf9e9e;*/
-  border: 1px solid #A4C8DD;
-  border-radius: 0;
-  padding: 1.25em;
-}
+  .pure-form 
+    input
+      width 100%
+      background transparent
+      box-shadow none
+      /*border: 1px solid #bf9e9e;*/
+      border 1px solid #A4C8DD
+      border-radius 0
+      padding 1.25em
 
-.login .pure-form button.submit {
-  width: 100%;
-  color: white;
-  background: transparent;
-  /*border: 1px solid #686884;*/
-  background: #382c36;
-  /*border: 1px solid #456272;*/
-  border: 1px solid #A4C8DD;
-  border-radius: 0;
-  text-transform: uppercase;
-  padding: 1.25em;
-  transition: all 0.5s ease;
-}
+    button.submit
+      width 100%
+      color white
+      background transparent
+      /*border: 1px solid #686884;*/
+      background #382c36
+      /*border: 1px solid #456272;*/
+      border 1px solid #A4C8DD
+      border-radius 0
+      text-transform uppercase
+      padding 1.25em
+      transition all 0.5s ease
 
-.login .pure-form button.submit:hover {
-  /*border: 1px solid #A4C8DD;*/
-  border: 1px solid #fff;
-}
+      &:hover
+        /*border: 1px solid #A4C8DD;*/
+        border 1px solid #fff
 
-.login .pure-form .pure-u-1-1,
-.login .pure-form .pure-u-1-2 {
-  padding: 1em 2em 1em 0;
-}
+    & .pure-u-1-1, & .pure-u-1-2
+      padding 1em 2em 1em 0
 </style>

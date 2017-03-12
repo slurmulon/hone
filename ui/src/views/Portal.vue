@@ -194,10 +194,10 @@ export default {
 
       & > input
         padding 0 1.5em
-        
+
     .item, .group, input, select
       height 5em
-      
+
   section
     /*display flex
     align-content stretch
@@ -235,10 +235,10 @@ export default {
       color #a4c8dd
       opacity 0.25
       margin-right 1em
-      
+
       &:hover
         opacity 0.75
-        
+
   & > .list
     width 100%
     margin-top 1em
@@ -252,17 +252,17 @@ export default {
       text-decoration none
       color #777
       border-bottom 1px solid #333
-      
+
       &:hover
         background #2d272d
-        
+
       & > .title
         flex 2
 
       i
         padding-right 1em
         flex 5% 0
-        
+
         &:last-of-type
           text-align right
 
@@ -279,7 +279,7 @@ export default {
   /*border-left 1px solid #456272*/
   border-left 1px solid #686884
   background #2b222a
-  
+
   &.empty
     height calc(100% - 100px)
     display flex
