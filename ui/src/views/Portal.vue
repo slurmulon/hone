@@ -3,12 +3,12 @@
     <div class="page">
       <!-- TODO: break this out into portal-browse or the like -->
       <div class="actions pure-form">
-        <div class="action group dashboards">
+        <!-- <div class="action group dashboards">
           <a href="#">
             Dashboard
             <i class="fa fa-angle-down" aria-hidden="true"></i>
           </a>
-        </div>
+        </div> -->
         <div class="action group projects">
           <a href="#">
             Projects
@@ -24,6 +24,12 @@
         <div class="action group tags">
           <a href="#">
             Tags
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="action group sprints">
+          <a href="#">
+            Sprints
             <i class="fa fa-angle-down" aria-hidden="true"></i>
           </a>
         </div>
@@ -46,20 +52,25 @@
         <div class="pinned panel pure-g">
           <h2>Pinned</h2>
           <div class="controls">
-            <a href><i class="fa fa-plus"></i></a>
             <a href><i class="fa fa-cogs"></i></a>
             <a href><i class="fa fa-trash"></i></a>
           </div>
           <div class="list">
-            <div class="item">
-              Project 1
-            </div>
-            <div class="item">
-              Project 2
-            </div>
-            <div class="item">
-              Project 3
-            </div>
+            <a href class="item">
+              <i class="fa fa-cubes"></i>
+              <span class="title">Project</span>
+              <i class=" fa fa-star"></i>
+            </a>
+            <a class="item">
+              <i class="fa fa-cube"></i>
+              <span class="title">Board</span>
+              <i class=" fa fa-star"></i>
+            </a>
+            <a class="item">
+              <i class="fa fa-ticket"></i>
+              <span class="title">Unit</span>
+              <i class=" fa fa-star"></i>
+            </a>
           </div>
         </div>
         <div class="assigned panel pure-g">
@@ -83,9 +94,6 @@
       <h2>
         <i class="fa fa-feed" aria-hidden="true"></i>
       </h2>
-      <!-- <div class="item">
-        No recent activity
-      </div> -->
       <div class="feed empty">
         <i>No recent activity</i>
       </div>
@@ -178,7 +186,7 @@ export default {
 }
 
 .portal .page > .actions i {
-  padding-right: 1em;
+  padding-right: .5em;
 }
 
 .portal .page > .actions input {
@@ -195,7 +203,7 @@ export default {
 }
 
 .portal .page > .actions .search-input {
-  flex: 2;
+  flex: 3;
 }
 
 .portal .page > .actions .search-input > input {
@@ -259,9 +267,31 @@ export default {
 }
 
 .portal .panel > .list .item {
+  display: inline-flex;
+  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
-  padding: 1em 0;
+  padding: 1em;
+  text-decoration: none;
+  color: #777;
   border-bottom: 1px solid #333;
+}
+
+.portal .panel > .list .item:hover {
+  background: #2d272d;
+}
+
+.portal .panel > .list .item i {
+  padding-right: 1em;
+  flex: 5% 0;
+}
+
+.portal .panel > .list .item i:last-of-type {
+  text-align: right;
+}
+
+.portal .panel > .list .item > .title {
+  flex: 2;
 }
 
 .portal .panel.pinned {
@@ -297,7 +327,7 @@ export default {
   padding: 1em;
   border-left: none;
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.25;
 }
 
 .portal .feed h2 {
